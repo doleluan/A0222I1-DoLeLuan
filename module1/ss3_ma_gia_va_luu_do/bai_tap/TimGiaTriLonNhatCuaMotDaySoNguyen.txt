@@ -1,0 +1,11 @@
+Begin
+	Input n va day so a1,a2,...an
+	max = a1;
+	i=2;
+	While(i<=N){
+		if ai>max;
+		max = ai;
+		i +=1;
+	}
+	Display max;
+End

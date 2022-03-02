@@ -1,0 +1,13 @@
+Begin 
+	Input diem
+	IF diem => 75 
+		Display Loai D
+	IF 60<=diem<75 
+		Display Loai B
+	IF 45<=diem<60
+		Display Loai C
+	IF 35<=diem<45 
+		Display Loai D
+	IF diem <35 	
+		Display Loai E
+End
