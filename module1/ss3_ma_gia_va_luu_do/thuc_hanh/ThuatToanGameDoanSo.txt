@@ -1,0 +1,7 @@
+Begin
+	N la so ngau nhien tu 0 den 9
+	input M
+	if(N==M) "Du Doan Dung"
+	else
+	"Du Doan Sai"
+End
