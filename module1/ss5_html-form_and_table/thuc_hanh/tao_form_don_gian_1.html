@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    table{
+        margin: 0 auto;
+        background-color: white;
+        width: 55%;
+    }
+        .enjoy{
+            background-color: coral;
+            color: white;
+        }
+        .color_coral{
+            color: coral;
+        }
+        .color_blue{
+            color: blue;
+        }
+        body{
+            background-color: aqua;
+        }
+        input{
+          border-top-color: darkgray;
+
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="10px" cellpadding="10px">
+        <form action="">
+            <tr class="enjoy" >
+                <th colspan="2">Sở Thích Của Bạn</th>
+            </tr>
+            <tr>
+                <td class="color_blue" >Họ và tên</td>
+                <td ><input type="text" size="30" required></td>
+            </tr>
+            <tr>
+                <td class="color_blue">Email</td>
+                <td ><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td class="color_blue">Sở thích</td>
+                <td>
+                    <label class="color_coral" for="sport"><input type="checkbox" id="sport">Thể Thao</label>
+                    <label class="color_coral" for="sport2"><input type="checkbox" id="sport2">Âm Nhạc</label>
+                    <label class="color_coral" for="sport3"><input type="checkbox" id="sport3">Đọc Sách</label>
+                    <br>
+                    <label class="color_coral" for="sport4"><input type="checkbox" id="sport4">Lướt Web</label>
+                    <label class="color_coral" for="sport5"><input type="checkbox" id="sport5">Chơi Game</label>
+                    <label class="color_coral" for="sport6"><input type="checkbox" id="sport6">Điện Ảnh</label>
+                    <br>
+                    <label class="color_coral" for="sport7"><input type="checkbox" id="sport7">Du Lịch</label>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Gửi Thông Tin">
+                    <input type="reset"></td>
+            </tr>
+        </form>
+    </table>
+</body>
+</html>
