@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1 id="html"></h1>
+    <select name="" id="mySelect1" onchange="do_test()" >
+        <option value="honda">Honda</option>
+        <option value="yamaha">Yamaha</option>
+        <option value="bmw">BMW</option>
+        <option value="mazda">Mazda</option>
+    </select>
+    <select name="" id="mySelect2">
+        <option value="yasuo">Yasuo</option>
+        <option value="jax">Jax</option>
+        <option value="garen">Garen</option>
+        <option value="mazda">Jinx</option>
+    </select>
+
+</body>
+<script>
+<!--    Test -->
+    var js = "hello"
+    document.getElementById("html").innerHTML = js;
+    // onChane
+    function do_test() {
+    var testOn = document.getElementById("mySelect1").value;
+    alert(testOn);
+    }
+    var selectedElement = document.getElementById("mySelect2");
+    selectedElement.addEventListener("change",chaneFunction);
+    function chaneFunction(){
+            var takeEvent = document.getElementById("mySelect2").value;
+            alert(takeEvent);
+}
+</script>
+</html>

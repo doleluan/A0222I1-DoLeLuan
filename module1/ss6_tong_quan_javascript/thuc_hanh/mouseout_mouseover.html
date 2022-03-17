@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <h2 id="hoangde">Huy hoang</h2>
+</body>
+<script>
+    var hoang = document.getElementById("hoangde");
+    hoang.addEventListener("mouseover",mouseOver);
+    hoang.addEventListener("mouseout",mouseOut);
+    function  mouseOver() {
+    document.getElementById("hoangde").style.color = "red";
+    }
+    function  mouseOut() {
+    document.getElementById("hoangde").style.color = "black";
+    }
+</script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulb</title>
+</head>
+<body>
+<img id="bulbon" src="https://www.w3schools.com/js/pic_bulbon.gif" alt="">
+<button id="changeOff">Off</button>
+<button id="changeOn">On</button>
+<button type="button" onclick="showMessage();">Click Me!</button>
+</body>
+<script>
+    var offbulb = document.getElementById("changeOff");
+    offbulb.addEventListener("click",chanBulbOff)
+    function chanBulbOff() {
+        document.getElementById("bulbon").src ="https://www.w3schools.com/js/pic_bulboff.gif"
+    }
+    var onbulb = document.getElementById("changeOn");
+    onbulb.addEventListener("click",chanBulbOn)
+    function chanBulbOn() {
+        document.getElementById("bulbon").src ="https://www.w3schools.com/js/pic_bulbon.gif"
+    }
+    function showMessage(){
+        console.log('Xin chào!');
+    }
+    let a = 5;
+    
+</script>
+</html>

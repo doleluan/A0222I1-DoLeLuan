@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Javascript</title>
+</head>
+<body>
+    <h1 id="demo">Một</h1>
+    <button id="change">Change</button>
+
+</body>
+<script>
+    var test = document.getElementById("change");
+    test.addEventListener("click",clickChange)
+    function clickChange() {
+        document.getElementById("demo").innerHTML = "Hai";
+    }
+</script>
+</html>

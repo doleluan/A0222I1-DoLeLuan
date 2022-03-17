@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Js</title>
+</head>
+<body>
+    <h1 id="hello"></h1>
+    <select name="" id="mySelect" onchange="Onchan()">
+        <option value="Yamaha">Yamaha</option>
+        <option value="Honda">Honda</option>
+    </select>
+    <select name="" id="lol">
+        <option value="Yasuo">Yasuo</option>
+        <option value="Hayate">Hayate</option>
+    </select>
+</body>
+<script>
+    var hello = "xinchao";
+    document.getElementById("hello").innerHTML = hello;
+    function Onchan() {
+        var testOn = document.getElementById("mySelect").value;
+        alert(testOn);
+    }
+    var testE = document.getElementById("lol");
+    testE.addEventListener("change",funTest)
+    function funTest(){
+        var testEvent = document.getElementById("lol").value;
+        alert(testEvent)
+    }
+</script>
+</html>
