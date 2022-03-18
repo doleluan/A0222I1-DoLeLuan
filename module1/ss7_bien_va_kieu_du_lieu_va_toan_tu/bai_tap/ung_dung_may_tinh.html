@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculate</title>
+    <style>
+        td{
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+<body>
+<form action="">
+    <table cellspacing="10px" cellpadding="10px">
+        <tr>
+            <td colspan="2">
+                <input value="" id="number1" type="text">
+            </td>
+            <td colspan="2">
+                <input value="" id="number2" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="add" type="button" value="Addition(+)">
+            </td>
+            <td>
+                <input id="sub" type="button" value="Subtraction(-)">
+            </td>
+            <td>
+                <input id="mul" type="button" value="Multiplication(x)">
+            </td>
+            <td>
+                <input id="divison" type="button" value="Division(/)">
+            </td>
+        </tr>
+    </table>
+    <p id="result"></p>
+</form>
+</body>
+<script>
+        let addition = document.getElementById("add");
+        let subtraction = document.getElementById("sub");
+        let multiplication = document.getElementById("mul");
+        let division = document.getElementById("divison");
+        addition.addEventListener("click",addNumber);
+        subtraction.addEventListener("click",subNumber)
+        multiplication.addEventListener("click",mulNumber);
+        division.addEventListener("click",divNumber);
+
+        function addNumber() {
+            let firstNumber = document.getElementById("number1").value;
+            let secondNumber = document.getElementById("number2").value;
+            let resultAdd = 0;
+            resultAdd = parseInt(firstNumber) + parseInt(secondNumber);
+            document.getElementById("result").innerText="Reuslt Addition: " + resultAdd;
+        }
+        function subNumber() {
+            let firstNumber = document.getElementById("number1").value;
+            let secondNumber = document.getElementById("number2").value;
+            let resultAdd = 0;
+            resultAdd = parseInt(firstNumber) - parseInt(secondNumber);
+            document.getElementById("result").innerText="Reuslt Subtraction: " + resultAdd;
+        }
+        function mulNumber() {
+            let firstNumber = document.getElementById("number1").value;
+            let secondNumber = document.getElementById("number2").value;
+            let resultAdd = 0;
+            resultAdd = parseInt(firstNumber) * parseInt(secondNumber);
+            document.getElementById("result").innerText="Reuslt Multiplication: " + resultAdd;
+        }
+        function divNumber() {
+            let firstNumber = document.getElementById("number1").value;
+            let secondNumber = document.getElementById("number2").value;
+            let resultAdd = 0;
+            resultAdd = parseInt(firstNumber) / parseInt(secondNumber);
+            document.getElementById("result").innerText="Reuslt Division: " + resultAdd;
+        }
+</script>
+</html>
