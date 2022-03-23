@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let a = parseFloat(prompt("Input a: "));
+    let b = parseFloat(prompt("Input b: "));
+    let c = parseFloat(prompt("Input c: "));
+    if (a>0 && b>0 && c>0){
+        if (a+b >c && a+c>b && c+b>a){
+            alert(a+ ", " +b +", "+c +" la canh cua mot tam giac")
+        }
+        else {
+            alert(a+ ", " +b +", "+c +" khong phai la canh cua mot tam giac")
+        }
+    }else {
+        alert("Day khong phai la tam giac")
+    }
+</script>
+</html>

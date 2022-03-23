@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let testPoint = parseFloat(prompt("Input Test Point: "));
+    let midTermPoint = parseFloat(prompt("Input Mid Term Point: "));
+    let endTermPoint = parseFloat(prompt("Input End Term Point: "));
+    let average = (testPoint + midTermPoint + endTermPoint)/3;
+    if(average>=8 && average<=10){
+        alert("excellent")
+    } else if(average>=6.5 && average<=8){
+        alert("good")
+    } else if(average>=5 && average<=6.5){
+        alert("average")
+    } else{
+        alert("bad")
+    }
+</script>
+</html>

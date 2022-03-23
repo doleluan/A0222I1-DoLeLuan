@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            background-color: white;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        div{
+            text-align: center;
+        }
+        input:hover{
+            cursor: pointer;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+            <h1 id="loveText">Do you love me</h1>
+            <input id="loveYes" type="button" value="YES">
+            <input  id="loveNo" type="button" value="NO" style="position: relative; left: 0px;top: 0px;">
+
+</body>
+<script>
+        let yesClick = document.getElementById("loveYes");
+        yesClick.addEventListener("click",clickYes)
+        function clickYes() {
+         alert("<3");
+         }
+        let noClick = document.getElementById("loveNo");
+        noClick.addEventListener("mouseover",clickNo);
+        function clickNo() {
+            let height = Math.round(Math.random() * window.innerHeight);
+            let width = Math.round(Math.random() * window.innerWidth);
+            document.getElementById("loveNo").style.left = width +"px"
+            document.getElementById("loveNo").style.top = height +"px"
+        }
+</script>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculate</title>
+    <style>
+        td input{
+            padding: 12px 16px;
+            background-color: yellow;
+            color: blue;
+            font-weight: bold;
+        }
+        table{
+            margin: 50px auto;
+            border: 2px solid blue;
+            background-color: #1cd9df;
+        }
+        tr{
+            border: hidden;
+        }
+    </style>
+</head>
+<body>
+    <table cellpadding="5px"  cellspacing="20px" >
+        <tr>
+            <td colspan="4">
+                <input id="resultCal"  type="text" size="32px" style="text-align: right">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input onclick="operand(1)"  type="button" value="1">
+            </td>
+            <td>
+                <input onclick="operand(2)"  type="button" value="2">
+            </td>
+            <td>
+                <input onclick="operand(3)"  type="button" value="3">
+            </td>
+            <td>
+                <input  onclick="operator('+')"   type="button" value="+">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input onclick="operand(4)"  type="button" value="4">
+            </td>
+            <td>
+                <input onclick="operand(5)"  type="button" value="5">
+            </td>
+            <td>
+                <input onclick="operand(6)"  type="button" value="6">
+            </td>
+            <td>
+                <input onclick="operator('-')"  type="button" value="-">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input onclick="operand(7)"  type="button" value="7">
+            </td>
+            <td>
+                <input onclick="operand(8)"  type="button" value="8">
+            </td>
+            <td>
+                <input onclick="operand(9)"  type="button" value="9">
+            </td>
+            <td>
+                <input onclick="operator('*')" type="button" value="*">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input onclick="reset()"  type="button" value="C">
+            </td>
+            <td>
+                <input onclick="operand(0)"  type="button" value="0">
+            </td>
+            <td>
+                <input onclick="calculate()"  type="button" value="=">
+            </td>
+            <td>
+                <input onclick="operator('/')"  type="button" value="/ ">
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+        function operator(operators){
+            let result = document.getElementById("resultCal");
+            result.value += operators;
+        }
+        function operand (operands){
+            let result = document.getElementById("resultCal");
+            result.value += operands;
+        }
+        function reset (){
+            let result = document.getElementById("resultCal");
+            result.value ="";
+        }
+        function calculate() {
+            let result = document.getElementById("resultCal");
+            result.value = eval(result.value)
+        }
+</script>
+</html>

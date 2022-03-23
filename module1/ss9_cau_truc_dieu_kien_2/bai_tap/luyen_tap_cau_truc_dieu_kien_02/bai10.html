@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let kWh = parseFloat(prompt("Input kWh"));
+    if(kWh <=50 && kWh >0 ){
+        alert("Gia tien la " + 1.678*kWh +" VND" );
+    } else if(kWh <=100 && kWh >50 ){
+        alert("Gia tien la " + 1.734*kWh +" VND" );
+    }
+    else if(kWh <=200 && kWh >100 ){
+        alert("Gia tien la " + 2.014*kWh +" VND" );
+    }else if(kWh <=300 && kWh >200 ){
+        alert("Gia tien la " + 2.536 *kWh +" VND" );
+    }else if(kWh <=400 && kWh >300 ){
+        alert("Gia tien la " + 2.834  *kWh +" VND" );
+    }else {
+        alert("Gia tien la " + 2.927   *kWh +" VND" );
+    }
+</script>
+</html>

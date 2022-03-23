@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+    </style>
+</head>
+<body>
+
+    <img id="ball" src="./ball.png" alt="">
+    <button style="display: block" id="buttonBall">Click to move ball</button>
+
+<script>
+    let imgObj = document.getElementById("ball");
+    function init(){
+        let imgBall = document.getElementById("ball");
+        imgBall.style.position = "relative";
+        imgBall.style.left = "0px";
+    }
+    let move = document.getElementById("buttonBall");
+    move.addEventListener("click",moveRight);
+    function moveRight() {
+        imgObj.style.left = parseInt(imgObj.style.left) + 10 +"px";
+    }
+    // moi lan load trang se tao gia tri cho init
+    window.onload = init;
+
+</script>
+</body>
+</html>
