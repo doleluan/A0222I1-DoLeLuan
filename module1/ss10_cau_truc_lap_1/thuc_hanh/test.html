@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let myArray = [
+        "Javascript",
+        "PHP",
+        "Ruby",
+        "CPP",
+        "Java"
+    ];
+    let student = {
+        name : "Luan",
+        age : 18,
+        class : "CMU",
+
+    };
+    let language = "javascript";
+    let animal = [
+        "Dog",
+        "Lion",
+        "Cat",
+        "Mouse",
+        "Shark"
+    ];
+    //vong lap for
+    let lengthArray = myArray.length;
+    for (let i =0;i<lengthArray;i++){
+        document.write(myArray[i] + "<br>");
+    }
+    //vong lap for-in
+    for (let key in student){
+        document.write(key + " <br>")
+    }
+    for (let key in student){
+        document.write(student[key] + " <br>")
+    }
+    for (let key in myArray){
+        document.write(key + " <br>")
+    }
+    for (let key in myArray){
+        document.write(myArray[key] + " <br>")
+    }
+//    vong lap for-of
+    for(let value of language){
+        document.write(value + " <br>");
+    }
+    //su dung cho object
+    Object.keys(student)
+    Object.values(student)
+    for(let value of Object.keys(student)){
+        document.write(value + " <br>");
+    }
+    for(let value of Object.keys(student)){
+        document.write(student[value] + " <br>");
+    }
+
+</script>
+</html>
