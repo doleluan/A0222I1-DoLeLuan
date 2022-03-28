@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2 id="result"></h2>
+</body>
+<script>
+        let result="";
+        let m =5;
+        let n =15;
+        for (let i =0;i<=m;i++) {
+            for (let j = 0; j <= n; j++) {
+                if (i == 0 || i == m) {
+                    result+="*"
+                } else {
+                    if (j == 0 || j == n) {
+                        result+="*"
+                    } else {
+                        result+="&nbsp&nbsp"
+                    }
+                }
+            }
+            result+="<br>"
+        }
+        document.write(result)
+</script>
+</html>

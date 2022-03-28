@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    // function checkPrime (number){
+    //     for(let i=2;i<number;i++){
+    //         if(number%i===0) return false;
+    //     }
+    //     return true;
+    // }
+    let numbers  = parseInt(prompt("Input n so nguyen to"));
+    let count = 0;
+    let i=1;
+    // while (true){
+    //     if (checkPrime(i)){
+    //         document.write(i + " ");
+    //         count++;
+    //     }
+    //     i++;
+    //     if (count==numbers) break;
+    // }
+    while (count <numbers){
+        let flag = true;
+        for (let j = 2; j < i ; j++) {
+                if(i%j===0){
+                    flag = false;
+                    break;
+                }
+
+        }
+        if(flag == true){
+            document.write(i + " ")
+            count ++
+        }
+        i++;
+    }
+</script>
+</html>

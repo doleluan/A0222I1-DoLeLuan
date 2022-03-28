@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let f1 = 0,f2 =1,fn;
+    let count =  parseInt(prompt("Input number"))
+    for(let i =0;i<count;i++){
+        if(i<=1){
+            fn =i;
+        }
+        else{
+            fn = f1+f2;
+            f1 =f2;
+            f2 = fn;
+        }
+        document.write(fn + " ");
+    }
+</script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <button id="play" >Chơi</button>
+    <button id="replay">CHơi lại</button>
+</body>
+<script>
+    let play = document.getElementById("play")
+    let replay = document.getElementById("replay")
+    let count = 0;
+    replay.addEventListener("click",rePlayGame)
+    play.addEventListener("click",playGame)
+    function  playGame() {
+        let max = parseInt(prompt("Input max"));
+        let min = parseInt(prompt("Input min"));
+        let number = Math.floor(Math.random() *(max-min +1) + min);
+        while (count<3){
+            let inputNum = parseInt(prompt("Nhap so can doan"));
+            if (inputNum===number){
+                alert("Chuc mung")
+                break;
+            }
+            else if (inputNum<number) {
+                alert("Be hon...Thua..!")
+            }
+            else {
+                alert("Lon hon...Thua..!")
+            }
+            count ++;
+        }
+    }
+    function rePlayGame() {
+        count = 0;
+    }
+</script>
+</html>
