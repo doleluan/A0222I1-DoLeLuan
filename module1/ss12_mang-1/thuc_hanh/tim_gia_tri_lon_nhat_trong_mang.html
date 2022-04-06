@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+        let amount = parseInt(prompt("Input the quantity of elements of the array"));
+        let numbers = new Array(amount);
+        let index = 0;
+        for (let i=0;i<amount;i++){
+            numbers[i] = parseInt(prompt("Input element " + i+1 ));
+        }
+        for (let i in numbers){
+            document.write("number[" + i +" ] = " + numbers[i] + "&nbsp&nbsp")
+        }
+
+        let max = numbers[0];
+        for (let i in numbers){
+            if(numbers[i] > max){
+                max = numbers[i];
+                index =i;
+            }
+        }
+        document.write("<br>" + "Max is " + max + " at position " + index);
+
+
+</script>
+</html>

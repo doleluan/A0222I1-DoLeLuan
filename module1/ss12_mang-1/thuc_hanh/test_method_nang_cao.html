@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let courses  =[
+        {
+            id :1,
+            name : "Javascript",
+            coin : 0
+        },
+        {
+            id :2,
+            name : "C++",
+            coin : 0
+        },
+        {
+            id :3,
+            name : "Java",
+            coin : 250
+        },
+        {
+            id :4,
+            name : "PHP",
+            coin : 0
+        },
+        {
+            id :5,
+            name : "PHP",
+            coin : 0
+        },
+    ]
+    // vong lap forEach
+    courses.forEach(function (value,index) {
+        // document.write(value.id);
+        console.log(value) // tra ve gia tri
+    })
+    // every (kiem tra tat ca dieu kien trong mang
+    let isFree = courses.every(function (value,index) {
+            return value.coin ===0;  // tra ve true-false
+    })
+//     some (kiem tra chi can mot phan tu dung)
+    let isSome = courses.some(function (value) {
+            return value.coin===250; // tra ve true-false
+    })
+    console.log(isSome)
+//    find tim phan tu
+    let isFind = courses.find(function (value) {
+      return   value.name==="PHP"; // tra ve CHỈ 1 phan tu
+    })
+    console.log(isFind)
+//    fillter
+    let isFillter = courses.filter(function (value) {
+        return  value.name==="PHP"; // tra ve tat ca phan tu
+    })
+    console.log(isFillter)
+</script>
+</html>
