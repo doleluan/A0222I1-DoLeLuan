@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let quantity = parseInt(prompt("input quantity of element of array"))
+    let array = new Array(quantity);
+    for (let i =0;i<array.length;i++){
+        array[i] = prompt("Input char");
+    }
+    for (let i =0;i<array.length;i++){
+        array[i] = array[i].replace(/-/g,"_")
+    }
+    document.write(array.join(" "))
+</script>
+</html>

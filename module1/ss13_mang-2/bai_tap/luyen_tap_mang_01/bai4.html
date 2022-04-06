@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = parseInt(prompt("Input quantity element of array"));
+    let arrays  = new Array(numbers);
+    for (let i =0;i<arrays.length;i++){
+        arrays[i] = parseInt(prompt("Input element " + parseInt(i+1) + " : "));
+    }
+    for (let i =0;i<arrays.length;i++){
+        document.write("Element " + parseInt(i+1)+ " : " + arrays[i] + "<br>");
+    }
+//Dao nguoc mang
+//    cach 1
+    document.write("Reverse array by method reverse: " + arrays.reverse().join(" "));
+//    cach 2
+    let first = 0;
+    let last  = arrays.length;
+    let temp = 0;
+    while (first<last){
+        temp = arrays[first]
+        arrays[first] = arrays[last];
+        arrays[last] = temp;
+        first++;
+        last--;
+    }
+    document.write("<br>"+"Reverse array : " + arrays.reverse().join(" "));
+</script>
+</html>

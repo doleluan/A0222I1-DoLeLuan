@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let numbers = parseInt(prompt("Input quantity element of array"));
+    let arrays  = new Array(numbers);
+    for (let i =0;i<arrays.length;i++){
+        arrays[i] = parseInt(prompt("Input element " + parseInt(i+1) + " : "));
+    }
+    for (let i =0;i<arrays.length;i++){
+        document.write("Element " + parseInt(i+1)+ " : " + arrays[i] + "<br>");
+    }
+    let number  = parseInt(prompt("Nhap so can tim: "));
+    for (let i =0;i<arrays.length;i++){
+        if (arrays[i]===numbers){
+            document.write("")
+            arrays.splice(i,1);
+        }
+    }
+    document.write("<br>" +arrays);
+</script>
+</html>

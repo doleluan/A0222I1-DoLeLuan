@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="inputEng">
+<input type="button" id="translate" value="Translate" onclick="translateVN()">
+<p id="result"></p>
+</body>
+<script>
+    let arrayEng = ["hello","people","dog","cat"]
+    let arrayVN = ["xin chào","con người","chó","mèo"]
+    function translateVN() {
+        let str = "";
+        let keyword = document.getElementById("inputEng").value;
+        if (keyword!=""){
+            if (arrayEng.indexOf(keyword) !=-1){
+                str = arrayVN[arrayEng.indexOf(keyword)];
+            }
+            else {
+                str = "Not found";
+            }
+        }else {
+            alert("Ban phai nhap tu khoa")
+        }
+        document.getElementById("result").innerText = str;
+    }
+</script>
+</html>
