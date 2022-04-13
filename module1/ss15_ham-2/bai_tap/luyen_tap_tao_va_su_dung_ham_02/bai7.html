@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+        function swap(a,b) {
+            let temp = a;
+            a =b;
+            b =temp;
+            return [a,b];
+        }
+        let firstNumber = parseInt(prompt("Input number1"));
+        let secondNumber = parseInt(prompt("Input number2"));
+        let result = swap(firstNumber,secondNumber);
+        document.write(result)
+</script>
+</html>

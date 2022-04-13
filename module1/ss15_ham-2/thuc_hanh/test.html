@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let x = 10; /*Biến toàn cục*/
+    function increase() { /*Tham số là biến cục bộ*/
+        // let x = 5; /*Biến cục bộ*/
+        // let x = 8; //err
+        x++;
+        document.write(x); //11 11
+    }
+    // alert(x); //
+    // increase(5);
+    increase(x);    
+    alert(x); //11 10
+</script>
+</html>

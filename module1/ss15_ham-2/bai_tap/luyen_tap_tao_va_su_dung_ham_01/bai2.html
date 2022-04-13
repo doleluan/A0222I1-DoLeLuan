@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" id="buttonNumber" value="Increase">
+<p id="result"></p>
+</body>
+<script>
+        let number = parseInt(prompt("Input number"));
+        let button = document.getElementById("buttonNumber");
+        button.addEventListener("click",increase)
+        function increase() {
+            number++;
+            document.getElementById("result").innerText = number;
+        }
+
+
+
+</script>
+</html>

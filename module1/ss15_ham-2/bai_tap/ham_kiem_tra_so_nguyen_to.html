@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function isPrime (number){
+        if (number==2){
+            return true;
+        }
+        for (let  i=2;i<Math.sqrt(number);i++){
+            if (number%i==0) return false;
+        }
+        return true;
+    }
+    let i=2;
+    let string = "";
+    while (true){
+        if (i>1000) break;
+        if (isPrime(i)){
+            string+= i +"<br>";
+        }
+        i++;
+    }
+    document.write(string)
+</script>
+</html>

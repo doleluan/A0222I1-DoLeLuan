@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    function reseverArray(arr){
+        return arr.reverse();
+    }
+    let number = parseInt(prompt("Input length of number"));
+    let arrayInt = new Array(number);
+    for (let i =0;i<arrayInt.length;i++){
+        let st = i+1
+        arrayInt[i] = parseInt(prompt("Input  element " + st + " :"));
+        while (!Number.isInteger(arrayInt[i])){
+            arrayInt[i] = parseInt(prompt("Input  element " + st + " again : "));
+        }
+    }
+    document.write(arrayInt + "<br>");
+    document.write("After reverse " + reseverArray(arrayInt)  + "<br>")
+</script>
+</html>

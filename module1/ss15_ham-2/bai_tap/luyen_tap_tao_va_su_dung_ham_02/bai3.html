@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = parseInt(prompt("Input number"));
+    let s =1;
+    function factorial(number) {
+        for (let i =1;i<=number;i++){
+            s*=i;
+        }
+        return s;
+    }
+    document.write("Factorial of " + number + " is: " + factorial(number))
+</script>
+</html>

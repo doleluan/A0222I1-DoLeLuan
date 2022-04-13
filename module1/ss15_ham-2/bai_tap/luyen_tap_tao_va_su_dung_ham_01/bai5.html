@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let string = prompt("Nhap ngoi sao can tim")
+    let stars = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let constellations = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "UrsaMajor", "Leo"];
+    let count = 0;
+    function find(string) {
+        for (let i =0;i<stars.length;i++){
+            if (stars[i].toLowerCase()==string.toLowerCase()){
+                document.write(constellations[i]);
+                count++;
+            }
+        }
+        if (count==0){
+            document.write("Not Found")
+        }
+    }
+    find(string);
+</script>
+</html>

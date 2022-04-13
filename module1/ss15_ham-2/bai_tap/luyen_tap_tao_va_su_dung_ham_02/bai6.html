@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let number = parseInt(prompt("Input number: "));
+    function checkInt(number) {
+        if (Number.isInteger(number) && number >0){
+            return true;
+            document.write("true")
+        }
+        else {
+            return  false;
+        }
+    }
+    document.write(checkInt(number))
+</script>
+</html>

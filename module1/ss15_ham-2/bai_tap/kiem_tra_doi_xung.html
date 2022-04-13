@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+
+    function isPalindrome(string) {
+        if (string[0]===string[string.length-1]){
+            if (string.length<2) return true;
+        }else {
+            return  false;
+        }
+        return isPalindrome(string.slice(1,string.length-1))
+    }
+    let a = isPalindrome(prompt("Input string"));
+    document.write(a);
+</script>
+</html>
