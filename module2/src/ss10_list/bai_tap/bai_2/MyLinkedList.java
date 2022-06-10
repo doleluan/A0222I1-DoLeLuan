@@ -18,10 +18,10 @@ public class MyLinkedList<E>{
         }
 
         public E getData() {
+
             return data;
         }
     }
-
     void addFirst(E e) {
         Node tmp = head;
 
