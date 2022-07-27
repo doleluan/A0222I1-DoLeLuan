@@ -15,7 +15,7 @@ Phone varchar(20),
 ClassID int not null,
 foreign key(ClassID) references Class(ClassID)
 );
-create table SubJect(
+create table `SubJect`(
 SubID int primary key auto_increment,
 SubName varchar(30) not null,
 Credit tinyint not null default 1 check (credit >=1),
@@ -26,7 +26,7 @@ MarkID int primary key auto_increment,
 SubID int not null unique,
 StudentID int not null  unique,
 Mark float default 0 check (Mark between 0 and 100),
-FOREIGN KEY (SubId) REFERENCES Subject (SubId),
+FOREIGN KEY (SubId) REFERENCES `Subject` (SubId),
     FOREIGN KEY (StudentId) REFERENCES Student (StudentId)
  
 );
