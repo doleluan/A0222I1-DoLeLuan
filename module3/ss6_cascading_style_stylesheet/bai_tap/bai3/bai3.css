@@ -1,0 +1,22 @@
+ul{
+    list-style: circle;
+}
+a{
+    text-decoration: none;
+    color: blue;
+    font-size: 20px;
+}
+li:hover a{
+    color: red;
+}
+.contain{
+    height: 90vh;
+    border: solid 5px black;
+    width: 60%;
+    margin: 0 auto;
+}
+img{
+    /* display: block; */
+    width: 200px;
+    height: 200px;
+}

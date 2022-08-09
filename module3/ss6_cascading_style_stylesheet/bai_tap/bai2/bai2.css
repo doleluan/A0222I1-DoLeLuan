@@ -1,0 +1,18 @@
+.contain{
+    text-align: justify;
+    width: 70%;
+    margin: 0 auto;
+}
+.p1{
+    display: inline-block;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.p2{
+    display: inline-block;
+    font-weight: bold;
+}
+.p3{
+    display: inline-block;
+    color: blue;
+}
