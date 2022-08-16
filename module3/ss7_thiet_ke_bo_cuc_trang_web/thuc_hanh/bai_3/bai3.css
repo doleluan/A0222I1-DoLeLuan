@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.head {
+    height: 50px;
+    position: fixed;
+    background-color: #000;
+    width: 100%;
+}
+.contain{
+    margin-left: 20px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+.contain_sem1,
+.contain_sem2{
+    position: relative;
+}
+.contain li{
+    padding: 14px 30px;
+    font-size: 20px;
+}
+.contain li:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.contain li p{
+    color: #fff;
+}
+.sem1_contain,
+.sem2_contain{
+    display: none;
+    position: absolute;
+    background-color: #000;
+    list-style: none;
+    top: 50px;
+    left: 0;
+    width: 200px;
+}
+.contain .contain_sem1:hover .sem1_contain{
+    display: block;
+}
+.contain .contain_sem2:hover .sem2_contain{
+    display: block;
+}

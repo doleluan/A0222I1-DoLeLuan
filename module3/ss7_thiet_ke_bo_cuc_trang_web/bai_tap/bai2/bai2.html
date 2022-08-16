@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="bai2.css">
+    <link rel="stylesheet" href="../bai2/fa-main/fa-main/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="header_search">
+            <li class="header_search-child-facebook"><i class="fa-brands fa-facebook  header_search-facebook"></i></li>
+            <li class="header_search-child-find">
+                <i class="fa-solid fa-magnifying-glass header_search-find "></i>
+                <input class="header_search-input" placeholder="Tìm kiếm trên facebook" type="text">
+            </li>
+        </ul>
+        <ul class="header_menu">
+            <li class="header_menu-child" onclick="menu_click(this,'#1877f2')"><i class="fa-solid fa-house header_menu-icon"></i>
+            <span class="header_menu-child-tooltip">Trang chủ</span>
+            </li>
+            <li class="header_menu-child" onclick="menu_click(this,'#1877f2')"><i class="fa-solid fa-circle-play header_menu-icon"></i>
+                <span class="header_menu-child-tooltip">Watch</span>
+            </li>
+            <li class="header_menu-child" onclick="menu_click(this,'#1877f2')"><i class="fa-solid fa-store header_menu-icon"></i>
+                <span class="header_menu-child-tooltip">Marketplace</span>
+            </li>
+            <li class="header_menu-child" onclick="menu_click(this,'#1877f2')"><i class="fa-solid fa-user-group header_menu-icon"></i>
+                <span class="header_menu-child-tooltip">Nhóm</span>
+            </li>
+            <li class="header_menu-child" onclick="menu_click(this,'#1877f2')"><i class="fa-solid fa-game-board header_menu-icon"></i>
+                <span class="header_menu-child-tooltip">Trò chơi</span>
+            </li>
+        </ul>
+        <ul class="header_nav">
+            <li class="header_nav-child"><i class="fa-solid fa-ellipsis-stroke header_nav-icon"></i></li>
+            <li class="header_nav-child"><i class="fa-brands fa-facebook-messenger header_nav-icon"></i></li>
+            <li class="header_nav-child"><i class="fa-solid fa-bell header_nav-icon"></i></li>
+            <li class="header_nav-child-img">
+                <img class="header_nav-img" src="../bai2/img/avt.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <div class="content">
+        <div class="content_dashboard">
+            <ul class="content_dashboard-list">
+                <li class="content_dashboard-list_item">
+                    <img src="../bai2/img/avt.jpg" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Đỗ Lê Luận</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/banbe.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Bạn bè</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/nhom.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Nhóm</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/market.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Marketplace</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/kyniem.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Kỷ Niệm</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/chiendichgayquy.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Chiến dịch gây quỹ</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/choigame.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Chơi game</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/daluu.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Đã lưu</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/fbpay.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Facebook Pay</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/gandaynhat.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Gần đây nhất</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/hienmau.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Hiến máu</p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/quangcaoganday.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Hoạt động quảng cáo gần đây
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/message.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Messenger
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/messagenhi.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Messenger nhí
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/sukien.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Sự kiện
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/trang.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Trang
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/trinhquanglyquangcao.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Trình quảng lý quảng cáo
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/trungtamkhoahockhihau.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Trung tâm Khoa học Khí hậu
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/trungtamquangcao.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Trung tâm quảng cáo
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/ungphokhancap.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Ứng phó khẩn cấp
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/videochoigame.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Video chơi game
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/videotructiep.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Video trực tiếp
+                    </p>
+                </li>
+                <li class="content_dashboard-list_item content_dashboard-list_item-work">
+                    <img src="../bai2/img/yeuthich.png" alt="" class="content_dashboard-list_item-img">
+                    <p class="content_dashboard-list_item-text">Yêu thích
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="content_new">
+            <div class="content_news">
+                <ul class="content_news-nav">
+                    <li class="content_news-nav-item"><p>Tin</p></li>
+                    <li class="content_news-nav-item"><p>Reels</p></li>
+                    <li class="content_news-nav-item"><p>Phòng họp mặt</p></li>
+                </ul>
+                <ul class="content_news-story">
+                    <li class="content_news-story-item-create">
+                        <div class="content_news-story-item-create_img">
+                        </div>
+                        <i class="fa-solid fa-circle-plus story-item-create_img-plus"></i>
+                        <span class="story-item-create_img-text">Tạo tin</span>
+                    </li>
+                    <li class="content_news-story-item">
+                        <img class="content_news-story-item_logo" src="../bai2/img/phamvietbu.jpg" alt="">
+                        <p class="content_news-story-item_text">Phạm Viết <br>Ngoãn</p>
+                        <span class="item_logo-active"></span>
+                    </li>
+                    <li class="content_news-story-item">
+                        <img class="content_news-story-item_logo" src="../bai2/img/phamvietbu.jpg" alt="">
+                        <p class="content_news-story-item_text">Phạm Viết <br>Ngoãn</p>
+                        <span class="item_logo-active"></span>
+                    </li>
+                    <li class="content_news-story-item">
+                        <img class="content_news-story-item_logo" src="../bai2/img/phamvietbu.jpg" alt="">
+                        <p class="content_news-story-item_text">Phạm Viết <br>Ngoãn</p>
+                        <span class="item_logo-active"></span>
+                    </li>
+                    <li class="content_news-story-item">
+                        <img class="content_news-story-item_logo" src="../bai2/img/phamvietbu.jpg" alt="">
+                        <p class="content_news-story-item_text">Phạm Viết <br>Ngoãn</p>
+                        <span class="item_logo-active"></span>
+                        <a class="story_next-logo">
+                            <i class="fa-solid fa-angle-right  story_next-logo-icon"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_status">
+                <div class="content_status-up">
+                    <img src="../bai2/img/avt.jpg" alt="" class="content_status-up-img">
+                    <input type="text" class="content_status-up-input" placeholder="Luận ơi, bạn đang nghĩ gì thế ?">
+                </div>
+                <ul class="content_status-type">
+                    <li class="content_status-type-item">
+                        <i class="fa-solid fa-video content_status-type-item_icon color-pink"></i>
+                        <p class="content_status-type-item_text">Video trực tiếp</p>
+                    </li>
+                    <li class="content_status-type-item">
+                        <i class="fa-solid fa-images content_status-type-item_icon color-green"></i>
+                        <p class="content_status-type-item_text">Ảnh/video</p>
+                    </li>
+                    <li class="content_status-type-item">
+                        <i class="fa-solid fa-face-grin content_status-type-item_icon color-yelow"></i>
+                        <p class="content_status-type-item_text">Cảm xúc/Hoạt động</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="content_posts">
+                <div class="content_posts-head">
+                    <div class="content_posts-head_owner">
+                        <img src="../bai2/img/huyhoang.jpg" alt="" class="content_posts-head_img">
+                        <div class="content_posts-head_owner_time">
+                            <p class="content_posts-head_name">Huy Hoàng</p>
+                            <span>1 giờ</span>
+                            <i class="fa-solid fa-earth-americas content_posts-head_owner_time-icon"></i>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis content_posts-head_icon"></i>
+                </div>
+                <div class="content_posts-text">
+                    <p>Anh nhớ em người yêu cũ 😢😢😢
+                        Chúc em sinh nhật vui vẻ
+                    </p>
+                    <span>#ltkn</span>
+                </div>
+                <div class="content_posts-img">
+                    <img src="../bai2/img/nang-tinh-hay-nhe-long.jpg" alt="">
+                </div>
+                <div class="content_posts-like">
+                    <span class="content_posts-like_icon">
+                        <i class="fa-solid fa-thumbs-up content_posts-like_icon-like"></i>
+                        <i class="fa-solid fa-face-sad-tear content_posts-like_icon-sad"></i>
+                    </span>
+                    <p class="content_posts-like-text">Đỗ Lê Luận, Trần Khánh và 5,8K người khác</p>
+                    <p class="content_posts-like-comment">970 bình luận  9,4K lượt chia sẻ</p>
+                </div>
+                <div class="content_posts-act">
+                    <div class="content_posts-act_item">
+                        <i class="fa-solid fa-thumbs-up content_posts-act_item-icon"></i>
+                        <p>Thích</p>
+                    </div>
+                    <div class="content_posts-act_item"> 
+                        <i class="fa-solid fa-comment content_posts-act_item-icon"></i>
+                        <p>Bình luận</p>
+                    </div>
+                    <div class="content_posts-act_item "> 
+                        <i class="fa-solid fa-share content_posts-act_item-icon"></i> 
+                        <p>Chia sẻ</p>
+                    </div>
+                </div>
+            </div>
+            <div class="content_posts">
+                <div class="content_posts-head">
+                    <div class="content_posts-head_owner">
+                        <img src="../bai2/img/hopde.jpg" alt="" class="content_posts-head_img">
+                        <div class="content_posts-head_owner_time">
+                            <p class="content_posts-head_name">Huỳnh Tuấn Khanh </p>
+                            <span>5 giờ</span>
+                            <i class="fa-solid fa-earth-americas content_posts-head_owner_time-icon"></i>
+                        </div>
+                    </div>
+                    <i class="fa-solid fa-ellipsis content_posts-head_icon"></i>
+                </div>
+                <div class="content_posts-text">
+                    <p>Ngày mai anh lên đường thực hiện 2 năm nghĩa vụ bảo vệ đất nước 😢😢😢
+                   <br> Chờ anh nhé!
+                    </p>
+                    <span>#vy_hân</span>
+                </div>
+                <div class="content_posts-img">
+                    <img src="../bai2/img/nghiavu.jpg" alt="">
+                </div>
+                <div class="content_posts-like">
+                    <span class="content_posts-like_icon">
+                        <i class="fa-solid fa-thumbs-up content_posts-like_icon-like"></i>
+                        <i class="fa-solid fa-face-sad-tear content_posts-like_icon-sad"></i>
+                    </span>
+                    <p class="content_posts-like-text">Đỗ Lê Luận, Trần Khánh và 5,8K người khác</p>
+                    <p class="content_posts-like-comment">970 bình luận  9,4K lượt chia sẻ</p>
+                </div>
+                <div class="content_posts-act">
+                    <div class="content_posts-act_item">
+                        <i class="fa-solid fa-thumbs-up content_posts-act_item-icon"></i>
+                        <p>Thích</p>
+                    </div>
+                    <div class="content_posts-act_item"> 
+                        <i class="fa-solid fa-comment content_posts-act_item-icon"></i>
+                        <p>Bình luận</p>
+                    </div>
+                    <div class="content_posts-act_item "> 
+                        <i class="fa-solid fa-share content_posts-act_item-icon"></i> 
+                        <p>Chia sẻ</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content_friend">
+            <div class="content_friend-content">
+                <div class="content_friend-content_header">
+                    <p class="content_friend_header-text">Được tài trợ</p>
+                    <div class="content_friend-content_header-img">
+                        <img src="../bai2/img/vivnpay.jpg" alt="">
+                        <div class="content_friend-content_header-review">
+                            <p>Ví VNPAY - Cho mọi người - Vì mọi gắn kết</p>
+                            <span>ganket.bnpay.vn</span>
+                        </div>
+                        <i class="fa-solid fa-ellipsis content_friend-content_header-icon"></i>
+                    </div>
+                    <div class="content_friend-content_header-img">
+                        <img src="../bai2/img/khoatkaki.jpg" alt="">
+                        <div class="content_friend-content_header-review">
+                            <p>Khoác KaKi</p>
+                            <span>sudoshop.vn</span>
+                        </div>
+                        <i class="fa-solid fa-ellipsis content_friend-content_header-icon"></i>
+                    </div>
+                </div>
+                <div class="content_friend-content-birthday">
+                    <p class="content_friend_header-text">Sinh nhật</p>
+                    <div class="content_friend-content-birthday-infor">
+                        <img src="../bai2/img/sinhnhatne.png" alt="">
+                        <p>Hôm nay là sinh nhật của <strong>Huỳnh Tuấn Khanh</strong> và <strong>Lê Thị Kim Ngân</strong></p>
+                    </div>
+                </div>
+                <div class="content_friend-contact">
+                    <div class="content_friend-contact-header">
+                        <p class="content_friend-contact-header-text">Người liên hệ</p>
+                        <div class="content_friend-contact-header-icon">
+                            <i class="fa-solid fa-magnifying-glass content_posts-head_icon"></i>
+                        <i class="fa-solid fa-ellipsis content_posts-head_icon"></i>
+                        </div>
+                    </div>
+                    <div class="content_friend-contact-friends">
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/huyhoang.jpg" alt="">
+                            <p>Huy Hoàng</p> 
+                            <span class="content_friend-contact-friend_active"></span>
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/hophuynh.jpg" alt="">
+                            <p>Hợp Huỳnh</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/phamvietbu.jpg" alt="">
+                            <p>Phạm Viết Ngoãn</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/hopde.jpg" alt="">
+                            <p>Huỳnh Tuấn Khanh</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/avtfb.jpg" alt="">
+                            <p>Sy Nguyen</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/avtfb.jpg" alt="">
+                            <p>HuỳnhTân Khánh</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/avtfb.jpg" alt="">
+                            <p>Trần Xuân Thiện</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/avtfb.jpg" alt="">
+                            <p>Nhất Huỳnh</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/avtfb.jpg" alt="">
+                            <p>Phạm Trí Tài</p> 
+                        </div>
+                        <div class="content_friend-contact-friend">
+                            <img src="../bai2/img/avtfb.jpg" alt="">
+                            <p>Trần Khánh</p> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="bai3.js"></script>
+</html>
