@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="92ad1292-8d29-4df1-9d0c-5b6ae727f4a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../module3/Case_study/bai_tap/bai_tap.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/Case_study/bai_tap/bai_tap.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.idea/product_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/.idea/product_management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/build/libs/product_management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/bai_tap/product_management/build/libs/product_management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/thuc_hanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss11_MVC_model/thuc_hanh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/user-manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module3/ss12_JDBC_and_CRUD/user-manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai1/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai1/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai2/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai2/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai2/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai2/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai2/src/main/webapp/WEB-INF/views/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss2_spring_controller/bai_tap/bai2/src/main/webapp/WEB-INF/views/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/classes/java/main/codegym/controller/ProductController.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/classes/java/main/codegym/controller/ProductController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/classes/java/main/codegym/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/classes/java/main/codegym/model/Product.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/classes/java/main/codegym/repository/impl/ProductRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/classes/java/main/codegym/repository/impl/ProductRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/libs/ProductManagement-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/build/libs/ProductManagement-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/java/codegym/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/java/codegym/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/java/codegym/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/java/codegym/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/java/codegym/repository/impl/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/java/codegym/repository/impl/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/webapp/WEB-INF/views/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../ss3_thymleaf/bai_tap/ProductManagement/src/main/webapp/WEB-INF/views/home.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2G2JLE8srkVemajgsVoToomILFB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="92ad1292-8d29-4df1-9d0c-5b6ae727f4a1" name="Changes" comment="" />
+      <created>1665580689634</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665580689634</updated>
+      <workItem from="1665580691526" duration="67000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

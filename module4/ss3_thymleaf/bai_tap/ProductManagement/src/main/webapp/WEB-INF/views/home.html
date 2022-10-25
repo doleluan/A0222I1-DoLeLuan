@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Product List</title>
 </head>
-<body >
+<body>
 <a style="text-decoration: none" th:href="@{/save}" >Add new Product</a>
 <form action="/search" method="get">
     <input type="text" name="inputSeach">
@@ -28,7 +28,6 @@
                 <td th:text="${product.manufactor}"></td>
                 <td><a th:href="@{/save/(idProduct=${product.id})}">Edit</a></td>
                 <td><a th:href="@{/delete/(idProduct=${product.id})}">Delete</a></td>
-<!--                <td><a th:href="@{/delete/idProduct (idProduct=${product.id})}">Delete</a></td>-->
             </tr>
         </table>
 

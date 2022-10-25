@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a style="text-decoration: none" th:href="@{/save}">Add new Product</a>
+<form action="" method="get">
+    <input type="text" name="inputSearch">
+    <button type="submit">Search</button>
+</form>
+<table width="700px" border="1">
+    <tr>
+        <th>STT</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Manufactor</th>
+        <th>Name Ctegory</th>
+        <th>Edit</th>
+        <th>Delete</th>
+
+    </tr>
+    <tr th:each="product,loop : ${productList}">
+        <td th:text="${loop.count}"></td>
+        <td th:text="${product.name}"></td>
+        <td th:text="${product.price}"></td>
+        <td th:text="${product.description}"></td>
+        <td th:text="${product.manufactor}"></td>
+        <td th:text="${product.category.name}"></td>
+        <td><a th:href="@{/save/(idProduct=${product.id})}">Edit</a></td>
+        <td><a th:href="@{/delete/(idProduct=${product.id})}">Delete</a></td>
+    </tr>
+</table>
+<div>
+    <span>
+        <a th:if = "${productList.hasPrevious()}"
+           th:href="@{/(page = ${productList.number - 1},inputSearch=${inputSearch})}">Previous</a>
+    </span>
+    <span style="color: red" th:each="pageNo: ${#numbers.sequence(0,productList.totalPages - 1)}">
+        <a th:href="@{/(page = ${pageNo},inputSearch=${inputSearch})}" th:text="${pageNo}"></a>
+    </span>
+    <span>
+        <a th:if = "${productList.hasNext()}"
+           th:href="@{/(page = ${productList.number +1},inputSearch=${inputSearch})}">Next</a>
+    </span>
+</div>
+</body>
+</html>

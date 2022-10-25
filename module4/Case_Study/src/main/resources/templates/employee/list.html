@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee List</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>STT</th>
+            <th>Employee Name</th>
+            <th>Date Of Birth</th>
+            <th>Identity Card</th>
+            <th>Salary</th>
+            <th>Phone Number</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </table>
+<tr th:each="employee,loop :${employeeList}">
+        <td th:text="${loop.count}"></td>
+    <td th:text="${employee.name}"></td>
+      <td th:text="${employee.dateOfBirth}"></td>
+    <td th:text="${employee.identityCard}"></td>
+    <td th:text="${employee.salary}"></td>
+    <td th:text="${employee.phoneNumber}"></td>
+    <td th:text="${employee.email}"></td>
+    <td th:text="${employee.address}"></td>
+</tr>
+</body>
+</html>

@@ -12,7 +12,7 @@
   </head>
   <body>
   <h1>Caculater</h1>
-
+-
   <form action="/add" method="post">
     <input type="number" name="a" id="a">
     <input type="number" name="b" id="b">

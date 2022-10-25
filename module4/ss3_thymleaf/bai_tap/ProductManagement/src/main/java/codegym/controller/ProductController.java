@@ -39,8 +39,7 @@ public class ProductController {
     }
     @GetMapping(value = "delete")
     private String delete(@RequestParam(value = "idProduct") Integer idProduct){
-        Product product = iProductServices.findById(idProduct);
-        iProductServices.delete(product);
+        iProductServices.delete(iProductServices.findById(idProduct));
         return "redirect:/";
     }
 //    @GetMapping(value = "delete/{idProduct}")
