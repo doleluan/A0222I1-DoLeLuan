@@ -6,27 +6,52 @@
 </head>
 <body>
 <form action="/save" method="post" th:object="${product}">
-    <input hidden="" type="text" th:field="*{id}">
+    <input id="idProduct" hidden="" type="text" th:field="*{id}">
     <label for="">Product Name: </label>
-    <input type="text" th:field="*{name}">
+    <input id="nameProduct" type="text" th:field="*{name}">
     <p style="color:red;" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
     <br>
     <label for="">Product Price: </label>
-    <input type="number" th:field="*{price}">
+    <input id="priceProduct" type="number" th:field="*{price}">
     <br>
     <label for="">Product Description: </label>
-    <input type="text" th:field="*{description}">
+    <input id="desProduct" type="text" th:field="*{description}">
     <br>
     <label for="">Product Manufactor: </label>
-    <input type="text" th:field="*{manufactor}">
+    <input id="manufactorProduct" type="text" th:field="*{manufactor}">
     <br>
     <label for="">Category: </label>
     <select th:field="*{category}" name="" id="">
-        <option th:each="categoryItems :${category}" th:value="${categoryItems.id}" th:text="${categoryItems.name}" value=""></option>
+        <option id="categoryId" th:each="categoryItems :${category}" th:value="${categoryItems.id}" th:text="${categoryItems.name}" value=""></option>
     </select>
 
     <br>
-    <button type="submit">Ok</button>
+    <button id="buttonSave" type="submit">Ok</button>
 </form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $('#buttonSave').click(function (event){
+            let id = document.getElementById("idProduct").value;
+            let name = document.getElementById("nameProduct").value;
+            let price = document.getElementById("priceProduct").value;
+            let description = document.getElementById("desProduct").value;
+            let manufactor = document.getElementById("manufactorProduct").value;
+            let category = document.getElementById("categoryId").value;
+
+            let jsonText = {
+                "id": id,
+                "name": name,
+                "price":price,
+                "description":description,
+                "manufactor":manufactor,
+                "category":category
+            }
+            console.log(jsonText);
+        })
+
+    })
+</script>
 </body>
 </html>

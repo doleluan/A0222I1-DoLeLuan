@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form th:action="@{/save}" method="post" th:object="${questionContent}">
+    <input hidden type="text" th:field="*{id}">
+    <label for="">Tiêu đề: </label>
+    <input type="text" th:field="*{title}">
+    <p style="color:red;margin: 0" th:errors="*{title}"></p>
+    <br>
+    <label for="">Nội Dung</label>
+     <textarea th:field="*{content}" ></textarea>
+    <br>
+    <p style="color:red;margin: 0" th:errors="*{content}"></p>
+    <label for="">Ngày Đăng</label>
+    <input type="date" th:field="*{date_create}">
+    <br>
+    <label for="">Loại câu hỏi: </label>
+    <select th:field="*{id_question_type}" name="" id="">
+        <option th:each="questionType : ${questionTypeList}" th:value="${questionType.id}" th:text="${questionType.name}">
+        </option>
+    </select>
+    <br>
+    <button type="submit">Save</button>
+</body>
+</html>

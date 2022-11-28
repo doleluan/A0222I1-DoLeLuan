@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="idProduct" hidden="" type="text">
+    <label for="">Product Name: </label>
+    <input id="nameProduct" type="text">
+    <br>
+    <label for="">Product Price: </label>
+    <input id="priceProduct" type="number" >
+    <br>
+    <label for="">Product Description: </label>
+    <input id="desProduct" type="text" >
+    <br>
+    <label for="">Product Manufactor: </label>
+    <input id="manufactorProduct" type="text">
+    <br>
+    <label for="">Category: </label>
+    <select  name="" id="">
+        <option id="categoryId">1</option>
+    </select>
+
+    <br>
+    <button id="buttonSave" type="submit">Ok</button>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+</script>
+<script>
+    $(document).ready(function () {
+        $('#buttonSave').click(function (event){
+            let id = document.getElementById("idProduct").value;
+            let name = document.getElementById("nameProduct").value;
+            let price = document.getElementById("priceProduct").value;
+            let description = document.getElementById("desProduct").value;
+            let manufactor = document.getElementById("manufactorProduct").value;
+            let category = document.getElementById("categoryId").value;
+
+            let jsonText = {
+                "id": id,
+                "name": name,
+                "price":price,
+                "description":description,
+                "manufactor":manufactor,
+                "category":category
+            }
+            console.log(jsonText);
+        })
+
+    })
+</script>
+</body>
+</html>

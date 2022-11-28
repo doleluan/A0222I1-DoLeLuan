@@ -1,18 +1,15 @@
 package com.example.furama.controller;
 
-import com.example.furama.model.Department;
-import com.example.furama.model.Employee;
-import com.example.furama.services.impl.DepartmentServices;
-import com.example.furama.services.impl.EmployeeServices;
-import com.example.furama.services.impl.LevelServices;
-import com.example.furama.services.impl.PositionServices;
+import com.example.furama.model.employee.Employee;
+import com.example.furama.services.employee.impl.DepartmentServices;
+import com.example.furama.services.employee.impl.EmployeeServices;
+import com.example.furama.services.employee.impl.LevelServices;
+import com.example.furama.services.employee.impl.PositionServices;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @Controller
 @RequestMapping("/employee")
@@ -53,11 +50,11 @@ public class EmployeeController {
     @PostMapping(value = "/save")
     private String saveEmployee(@ModelAttribute("employee") Employee employee){
         employeeServices.save(employee);
-        return "redirect:/";
+        return "redirect:/employee";
     }
     @GetMapping(value = "delete")
-    private String deleteProduct(@RequestParam(name = "id") Integer id) {
+    private String deleteEmployee(@RequestParam(name = "id") Integer id) {
         employeeServices.delete(employeeServices.getEmployeeById(id));
-        return "redirect:/";
+        return "redirect:/employee";
     }
 }

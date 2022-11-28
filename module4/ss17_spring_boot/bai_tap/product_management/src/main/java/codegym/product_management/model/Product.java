@@ -1,5 +1,8 @@
 package codegym.product_management.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
@@ -19,8 +22,8 @@ public class Product {
     private String manufactor;
     @ManyToOne
     @JoinColumn(name = "id_category")
+    @JsonBackReference
     private Category category;
-
     public Category getCategory() {
         return category;
     }

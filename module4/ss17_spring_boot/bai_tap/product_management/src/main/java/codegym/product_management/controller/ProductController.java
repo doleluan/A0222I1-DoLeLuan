@@ -44,6 +44,7 @@ public class ProductController {
         model.addAttribute("category",iCategoryServices.getAll());
         return "save";
     }
+
     @PostMapping(value = "save")
     private String saveProduct(@Valid @ModelAttribute("product") Product product, BindingResult bindingResult,Model model) {
         if (bindingResult.hasErrors()){

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="633c4b9c-b7cb-44b9-9f39-5f6442235e5a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/customer/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/user/UserRole.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/Case_study/bai_tap/bai_tap.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/Case_study/bai_tap/bai_tap.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/6.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.idea/product_management.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/.idea/product_management.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/build/libs/product_management-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/bai_tap/product_management/build/libs/product_management-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss11_MVC_model/thuc_hanh/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss11_MVC_model/thuc_hanh/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/bai_tap/user_management/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/thuc_hanh/user-manager/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/user-manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module3/ss12_JDBC_and_CRUD/user-manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/furama/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/controller/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/Department.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/employee/Department.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/employee/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/Level.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/employee/Level.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/model/employee/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/IDepartmentRepsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/employee/IDepartmentRepsitory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/IEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/employee/IEmployeeRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/ILevelRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/employee/ILevelRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/IPositionRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/repository/employee/IPositionRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/IDepartMentServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/IDepartMentServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/IEmployeeServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/IEmployeeServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/ILevelServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/ILevelServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/IPositionServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/IPositionServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/impl/DepartmentServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/impl/DepartmentServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/impl/EmployeeServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/impl/EmployeeServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/impl/LevelServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/impl/LevelServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/impl/PositionServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/java/com/example/furama/services/employee/impl/PositionServices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/resources/templates/employee/list.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/resources/templates/employee/list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/resources/templates/employee/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/resources/templates/employee/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/furama/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/furama/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/java/codegym/product_management/controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/java/codegym/product_management/controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/java/codegym/product_management/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/java/codegym/product_management/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/java/codegym/product_management/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/java/codegym/product_management/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/resources/templates/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss17_spring_boot/bai_tap/product_management/src/main/resources/templates/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss3_thymleaf/bai_tap/ProductManagement/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss3_thymleaf/bai_tap/ProductManagement/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/src/main/webapp/WEB-INF/views/form.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ss8_validation/bai_tap/valid_user/src/main/webapp/WEB-INF/views/form.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2Gdb7Zv2sLnSvr7MA8cuhJVXIx5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/furama" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="633c4b9c-b7cb-44b9-9f39-5f6442235e5a" name="Changes" comment="" />
+      <created>1666721241967</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1666721241967</updated>
+      <workItem from="1666721243783" duration="149000" />
+      <workItem from="1668428627613" duration="125000" />
+      <workItem from="1668429060385" duration="251000" />
+      <workItem from="1668429353251" duration="25000" />
+      <workItem from="1668429412165" duration="164000" />
+      <workItem from="1668429622778" duration="11000" />
+      <workItem from="1668429648693" duration="140000" />
+      <workItem from="1669136610660" duration="1373000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

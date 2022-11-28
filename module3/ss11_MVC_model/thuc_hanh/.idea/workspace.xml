@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5f71f42f-242f-458d-8c17-3544b7afb2f4" name="Default Changelist" comment="" />
+    <list default="true" id="5f71f42f-242f-458d-8c17-3544b7afb2f4" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Case_study/bai_tap/bai_tap.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../../Case_study/bai_tap/bai_tap.sql" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,8 +24,11 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -36,6 +41,7 @@
       <option name="presentableId" value="Default" />
       <updated>1661166385627</updated>
       <workItem from="1661166392182" duration="124000" />
+      <workItem from="1661593138369" duration="21000" />
     </task>
     <servers />
   </component>
