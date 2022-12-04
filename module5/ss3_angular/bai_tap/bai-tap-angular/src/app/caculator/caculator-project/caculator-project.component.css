@@ -1,0 +1,9 @@
+.caculater-table{
+  text-align: center;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+button{
+  padding: 10px;
+  margin: 2px;
+}

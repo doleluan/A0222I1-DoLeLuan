@@ -1,0 +1,28 @@
+<div class="caculater-table">
+  <input type="text" id="result-caculator" [value]="valueCaculator">
+  <div>
+    <button #element7  (click)="changeValue(element7)" value="7">7</button>
+    <button #element8  (click)="changeValue(element8)" value="8">8</button>
+    <button #element9  (click)="changeValue(element9)" value="9">9</button>
+    <button #elementMinus  (click)="changeValue(elementMinus)" value="-">-</button>
+    <button value="delete" (click)="deleteValue()">X</button>
+  </div>
+  <div>
+    <button #element4  (click)="changeValue(element4)" value="4">4</button>
+    <button #element5  (click)="changeValue(element5)" value="5">5</button>
+    <button #element6  (click)="changeValue(element6)" value="6">6</button>
+    <button #elementPlus  (click)="changeValue(elementPlus)" value="+">+</button>
+    <button #elementDivision  (click)="changeValue(elementDivision)" value="/">/</button>
+  </div>
+  <div>
+    <button #element1  (click)="changeValue(element1)" value="1">1</button>
+    <button #element2  (click)="changeValue(element2)" value="2">2</button>
+    <button #element3  (click)="changeValue(element3)" value="3">3</button>
+    <button #elementMul  (click)="changeValue(elementMul)" value="*">*</button>
+    <button value="=" (click)="resultCalulator()">=</button>
+  </div>
+  <div>
+    <button (click)="resetValue()">C</button>
+    <button #element0 (click)="changeValue(element0)" value="0">0</button>
+  </div>
+</div>
