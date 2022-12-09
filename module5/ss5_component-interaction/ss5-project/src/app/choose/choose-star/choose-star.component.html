@@ -1,0 +1,9 @@
+<div class="chooseStar" >
+    <div class="star" *ngFor="let i of [].constructor(ratingStar.valueStar);let x =index" [style.background]="ratingStar.active">
+    {{x+1}}
+    </div>
+  <div class="star" *ngFor="let i of [].constructor(10 -ratingStar.valueStar);let x =index" >
+    {{x+ratingStar.valueStar+1}}
+  </div>
+</div>
+<app-choose-star-child [rating] = "ratingStar" (createRating)="getNewRating($event)"></app-choose-star-child>

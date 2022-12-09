@@ -1,0 +1,16 @@
+.star{
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  background-color: antiquewhite;
+}
+.star:hover{
+  cursor: pointer;
+}
+.chooseStar{
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-around;
+}

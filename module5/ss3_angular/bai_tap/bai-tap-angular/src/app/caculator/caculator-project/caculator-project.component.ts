@@ -12,6 +12,7 @@ export class CaculatorProjectComponent implements OnInit {
   ngOnInit(): void {
   }
   changeValue(value){
+    // if(typeof  value == "string" && flag == false) return
   this.valueCaculator += value.value;
   }
   resultCalulator(){
