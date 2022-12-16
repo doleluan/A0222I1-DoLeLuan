@@ -1,0 +1,30 @@
+<table class="table">
+  <thead>
+  <th>
+    STT
+  </th>
+  <th>
+    Id
+  </th>
+  <th>
+    Name
+  </th>
+  <th>
+    Gender
+  </th>
+  <th>
+    Point
+  </th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of students; let inx = index">
+      <td>{{inx+1}}</td>
+      <td>{{item.id}}</td>
+      <td>{{item.name}}</td>
+      <td *ngIf="item.gender==1">Nam</td>
+      <td *ngIf="item.gender==0">Nữ</td>
+      <td>{{item.point}}</td>
+    </tr>
+  </tbody>
+</table>
+<app-student-create (createForm)="getFormTemplate($event)"></app-student-create>

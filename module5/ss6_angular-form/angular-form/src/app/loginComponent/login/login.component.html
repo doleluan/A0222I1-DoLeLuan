@@ -1,0 +1,11 @@
+<form action="" [formGroup]="loginFrom" (ngSubmit)="loginForms()">
+  <div>
+    Name: <input formControlName="name" type="text"   required>
+    <p *ngIf="loginFrom.controls.name.hasError('pattern')" style="color: red">Khong the bo trong</p>
+  </div>
+  <div>
+    Password: <input formControlName="password" type="text" >
+    <p *ngIf="loginFrom.controls.password.hasError('minlength')" style="color: red">Khong the bo trong</p>
+  </div>
+  <button type=""submit>ok</button>
+</form>

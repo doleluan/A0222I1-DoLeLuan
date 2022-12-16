@@ -1,0 +1,34 @@
+<form #formTemplate="ngForm" action="" (ngSubmit)="createFormTemplate(formTemplate)">
+  <div>
+    Id: <input ngModel type="text" name="id"  required>
+    <p *ngIf="formTemplate.controls.id.hasError('required')" style="color: red">Khong the bo trong</p>
+  </div>
+  <div>
+    Name: <input ngModel type="text" name="name" >
+  </div>
+  <div>
+    Gender: Nam<input ngModel type="radio" value="1" name="gender">
+    Nữ<input type="radio" value="0" name="gender">
+  </div>
+  <div>
+    Point: <input ngModel type="text" name="point" >
+  </div>
+  <button type="submit">Send</button>
+</form>
+<form action="" [formGroup]="formReactive" (ngSubmit)="createFromReactive()">
+  <div>
+    Id: <input formControlName="id" type="text"   required>
+    <p *ngIf="formReactive.controls.id.hasError('required')" style="color: red">Khong the bo trong</p>
+  </div>
+  <div>
+    Name: <input formControlName="name" type="text" >
+  </div>
+  <div>
+    Gender: Nam<input formControlName="gender" type="radio" value="1" >
+    Nữ<input type="radio" value="0" name="gender">
+  </div>
+  <div>
+    Point: <input formControlName="point" type="text"  >
+  </div>
+  <button type="submit">Send</button>
+</form>

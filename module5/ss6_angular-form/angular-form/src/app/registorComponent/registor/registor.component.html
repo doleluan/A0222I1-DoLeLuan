@@ -1,0 +1,39 @@
+<form action="" [formGroup]="loginFrom" (ngSubmit)="loginForms()">
+  <div>
+    Email: <input formControlName="email" type="text"   required>
+    <p *ngIf="loginFrom.controls.email.hasError('pattern')" style="color: red">Email phai dung dinh dang</p>
+  </div>
+  <fieldset formGroupName="pwGroup">
+    <div>
+      Password: <input formControlName="password" type="password" >
+      <p *ngIf="loginFrom.get('pwGroup').get('password').errors?.minlength" style="color: red">Password khong dat yeu cau</p>
+    </div>
+    <div>
+      Comfirm Password: <input formControlName="comfirmPassword" type="password"   required>
+      <p *ngIf="loginFrom.hasError('passwordnotmatch',['pwGroup']) && loginFrom.get('pwGroup').touched" style="color: red">Cofirm Password khong dat yeu cau</p>
+    </div>
+  </fieldset>
+
+  <div>
+    Country:
+    <select name="" id="" formControlName="country">
+      <option *ngFor="let itemCountry of listCountry" [ngValue]="itemCountry" >{{itemCountry}}</option>
+    </select>
+  </div>
+  <div>
+    Age: <input formControlName="age" type="date"   required>
+    <p *ngIf="loginFrom.controls.age.hasError('validAge')" style="color: red">Tuoi phai lon hon 18</p>
+  </div>
+  <div>
+    Gender:
+    Male<input formControlName="gender" value="0" type="radio" >
+    Female<input formControlName="gender" value="1" type="radio" >
+    LGBT<input formControlName="gender" value="2" type="radio" >
+<!--    <p *ngIf="loginFrom.controls.password.hasError('minlength')" style="color: red">Khong the bo trong</p>-->
+  </div>
+  <div>
+    Phone: <input formControlName="phone" type="text"   required>
+    <p *ngIf="loginFrom.controls.phone.hasError('pattern')" style="color: red">Sdt khong dung dinh dang</p>
+  </div>
+  <button type="submit" [disabled]="loginFrom.invalid">ok</button>
+</form>
