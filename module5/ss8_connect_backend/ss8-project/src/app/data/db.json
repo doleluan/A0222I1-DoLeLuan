@@ -1,0 +1,46 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "I Phone 13",
+      "country": "USA",
+      "price": 10000,
+      "description": "NEW 99%"
+    },
+    {
+      "id": 2,
+      "name": "I Phone 14",
+      "country": "USA",
+      "price": 10000,
+      "description": "NEW 99%"
+    },
+    {
+      "id": 3,
+      "name": "I Phone 15",
+      "country": "USA",
+      "price": 10000,
+      "description": "NEW 99%"
+    },
+    {
+      "id": 4,
+      "name": "123",
+      "price": 13,
+      "country": 13,
+      "description": "13"
+    },
+    {
+      "id": 5,
+      "name": "1",
+      "price": 32,
+      "country": 23,
+      "description": "23"
+    },
+    {
+      "id": 6,
+      "name": "",
+      "price": "",
+      "country": "",
+      "description": ""
+    }
+  ]
+}
