@@ -1,0 +1,37 @@
+{
+  "facility": [
+    {
+      "id": 1,
+      "name": "Alo",
+      "areaFacility": 200,
+      "cost": 500,
+      "maxPeople": 2,
+      "standardRoom": 1,
+      "descriptionOtherConvenience": "Ok",
+      "poolArea": 200,
+      "numberOfFloors": 5
+    },
+    {
+      "id": 2,
+      "name": "Alo",
+      "areaFacility": 200,
+      "cost": 500,
+      "maxPeople": 2,
+      "standardRoom": 1,
+      "descriptionOtherConvenience": "Ok",
+      "poolArea": 200,
+      "numberOfFloors": 5
+    },
+    {
+      "id": 3,
+      "name": "Alo",
+      "areaFacility": 200,
+      "cost": 500,
+      "maxPeople": 2,
+      "standardRoom": 1,
+      "descriptionOtherConvenience": "Ok",
+      "poolArea": 200,
+      "numberOfFloors": 5
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+import { Component, OnInit } from '@angular/core';
+import {FacilityService} from "../../services/facility.service";
+import {Facility} from "../../model/Facility";
+
+@Component({
+  selector: 'app-facility-list',
+  templateUrl: './facility-list.component.html',
+  styleUrls: ['./facility-list.component.css']
+})
+export class FacilityListComponent implements OnInit {
+  facilitys:Facility[]=[];
+  facility;
+  constructor(private facilityService : FacilityService) { }
+
+  ngOnInit(): void {
+    this.getAll();
+
+  }
+  getAll(){
+   this.facilityService.getAll().subscribe(data=>{
+      this.facilitys = data;
+     console.log(this.facilitys.length)
+    })
+
+  }
+
+  deleteFacility() {
+    this.facilityService.delete(this.facility.id).subscribe(date=>{
+      this.ngOnInit();
+    })
+  }
+  getInfo(facility) {
+    this.facility = facility;
+  }
+}

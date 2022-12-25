@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Yeucau1Component } from './yeucau1.component';
+import { HeaderFuramaComponent } from './header-furama.component';
 
-describe('Yeucau1Component', () => {
-  let component: Yeucau1Component;
-  let fixture: ComponentFixture<Yeucau1Component>;
+describe('HeaderFuramaComponent', () => {
+  let component: HeaderFuramaComponent;
+  let fixture: ComponentFixture<HeaderFuramaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ Yeucau1Component ]
+      declarations: [ HeaderFuramaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(Yeucau1Component);
+    fixture = TestBed.createComponent(HeaderFuramaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
