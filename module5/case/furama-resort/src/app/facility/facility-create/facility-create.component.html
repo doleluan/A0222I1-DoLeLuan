@@ -1,0 +1,110 @@
+<form [formGroup]="rfForm" (ngSubmit)="submit()">
+  <table>
+    <tr>
+<!--      <td>Id: </td>-->
+      <td><input type="text" formControlName="id" name="name" hidden></td>
+    </tr>
+
+    <tr>
+      <td>Name</td>
+      <td><input type="text" formControlName="name" name=""></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <p *ngIf="rfForm.controls.name.hasError('pattern') && rfForm.controls.name.touched" style="color: red;
+          margin: 0">Ten dich vu khong duoc chua so</p></td>
+    </tr>
+    <tr>
+      <td>Cost</td>
+      <td><input type="text" formControlName="cost" ></td>
+    </tr>
+    <tr>
+      <td>
+        <p *ngIf="rfForm.controls.cost.hasError('pattern') && rfForm.controls.cost.touched" style="color: red;
+          margin: 0">Cost phải là số</p>
+      </td>
+      <td>
+        <p *ngIf="rfForm.controls.cost.hasError('validThan0') && rfForm.controls.cost.touched" style="color: red;
+          margin: 0">Cost phai lon hon 0</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Pool Area</td>
+      <td><input type="text" formControlName="poolArea" name="poolArea"></td>
+    </tr>
+    <tr>
+      <td>
+        <p *ngIf="rfForm.controls.poolArea.hasError('pattern') && rfForm.controls.poolArea.touched" style="color: red;
+          margin: 0">Cost phải là số</p>
+      </td>
+      <td>
+        <p *ngIf="rfForm.controls.poolArea.hasError('validThan0') && rfForm.controls.poolArea.touched" style="color: red;
+          margin: 0">Cost phai lon hon 0</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Area Facility</td>
+      <td><input type="text" formControlName="areaFacility" ></td>
+    </tr>
+    <tr>
+      <td>
+        <p *ngIf="rfForm.controls.areaFacility.hasError('pattern') && rfForm.controls.areaFacility.touched" style="color: red;
+          margin: 0">Diện tích phải là số</p>
+      </td>
+      <td>
+        <p *ngIf="rfForm.controls.areaFacility.hasError('validThan0') && rfForm.controls.areaFacility.touched" style="color: red;
+          margin: 0">Diện tích phai lon hon 0</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Number Of Floor</td>
+      <td><input type="text" formControlName="numberOfFloors"></td>
+    </tr>
+    <tr>
+      <td>
+        <p *ngIf="rfForm.controls.numberOfFloors.hasError('pattern') && rfForm.controls.numberOfFloors.touched" style="color: red;
+          margin: 0">Number Of Floor phải là số</p>
+      </td>
+      <td>
+        <p *ngIf="rfForm.controls.numberOfFloors.hasError('validThan0') && rfForm.controls.numberOfFloors.touched" style="color: red;
+          margin: 0">Number Of Floor phai lon hon 0</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Max People</td>
+      <td><input type="text" formControlName="maxPeople"></td>
+    </tr>
+    <tr>
+      <td>
+        <p *ngIf="rfForm.controls.maxPeople.hasError('pattern') && rfForm.controls.maxPeople.touched" style="color: red;
+          margin: 0">Max People phải là số</p>
+      </td>
+      <td>
+        <p *ngIf="rfForm.controls.maxPeople.hasError('validThan0') && rfForm.controls.maxPeople.touched" style="color: red;
+          margin: 0">Max People phai lon hon 0</p>
+      </td>
+    </tr>
+    <tr>
+      <td>Standard Room</td>
+      <td><input type="text" formControlName="standardRoom"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <p *ngIf="rfForm.controls.standardRoom.hasError('required') && rfForm.controls.standardRoom.untouched" style="color: red;
+          margin: 0">Tiêu chuẩn phòng không được bỏ trống</p></td>
+    </tr>
+    <tr>
+      <td>Other Convenience</td>
+      <td><input type="text" formControlName="descriptionOtherConvenience"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <p *ngIf="rfForm.controls.descriptionOtherConvenience.hasError('required') && rfForm.controls.descriptionOtherConvenience.untouched" style="color: red;
+          margin: 0">Không được bỏ trống</p></td>
+    </tr>
+  </table>
+
+</form>

@@ -19,7 +19,6 @@ export class FacilityListComponent implements OnInit {
   getAll(){
    this.facilityService.getAll().subscribe(data=>{
       this.facilitys = data;
-     console.log(this.facilitys.length)
     })
 
   }
@@ -31,5 +30,9 @@ export class FacilityListComponent implements OnInit {
   }
   getInfo(facility) {
     this.facility = facility;
+  }
+
+  addNew() {
+    this.facility=undefined;
   }
 }

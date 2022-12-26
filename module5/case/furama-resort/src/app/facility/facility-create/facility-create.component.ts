@@ -1,36 +1,58 @@
-import { Component, OnInit } from '@angular/core';
-import {FormBuilder, FormGroup} from "@angular/forms";
+import {Component, Input, OnChanges, OnInit, SimpleChanges} from '@angular/core';
+import {AbstractControl, FormBuilder, FormGroup, Validators} from "@angular/forms";
 import {Facility} from "../../model/Facility";
 import {Router} from "@angular/router";
 import {FacilityService} from "../../services/facility.service";
+import {FacilityListComponent} from "../facility-list/facility-list.component";
 
 @Component({
   selector: 'app-facility-create',
   templateUrl: './facility-create.component.html',
   styleUrls: ['./facility-create.component.css']
 })
-export class FacilityCreateComponent implements OnInit {
+export class FacilityCreateComponent implements OnInit,OnChanges {
+
   rfForm :FormGroup;
+  @Input()
   facility:Facility;
-  constructor(private formBuilder :FormBuilder,private router: Router,private facilityService:FacilityService) { }
+  constructor(private formBuilder :FormBuilder,private router: Router,private facilityService:FacilityService
+  , private  list :FacilityListComponent) { }
 
   ngOnInit(): void {
-    // this.buildThisForm();
+
   }
-  // buildThisForm(){
-  //   this.rfForm = this.formBuilder.group({
-  //     id:[this.facility===undefined ? "" : this.facility.id],
-  //     name:[ this.facility===undefined ? "" : this.facility.name],
-  //     cost:[this.facility===undefined ? "" : this.facility.cost],
-  //     areaFacility:[ this.facility===undefined ? "" : this.facility.areaFacility],
-  //     poolArea:[ this.facility===undefined ? "" : this.facility.poolArea],
-  //     numberOfFloors:[ this.facility===undefined ? "" : this.facility.numberOfFloors],
-  //     standardRoom:[ this.facility===undefined ? "" : this.facility.standardRoom],
-  //     maxPeople:[ this.facility===undefined ? "" : this.facility.maxPeople],
-  //   })
-  // }
-
+  ngOnChanges(changes:SimpleChanges): void {
+    this.facility = changes.facility.currentValue;
+    this.buildThisForm();
+  }
+  buildThisForm(){
+    console.log(this.facility)
+    this.rfForm = this.formBuilder.group({
+      id:[this.facility===undefined ? "" : this.facility.id],
+      name:[ this.facility===undefined ? "" : this.facility.name,Validators.pattern('\\D{0,}')],
+      cost:[this.facility===undefined ? "" : this.facility.cost,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      areaFacility:[ this.facility===undefined ? "" : this.facility.areaFacility,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      poolArea:[ this.facility===undefined ? "" : this.facility.poolArea,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      numberOfFloors:[ this.facility===undefined ? "" : this.facility.numberOfFloors,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      standardRoom:[ this.facility===undefined ? "" : this.facility.standardRoom,Validators.required],
+      maxPeople:[ this.facility===undefined ? "" : this.facility.maxPeople,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      descriptionOtherConvenience:[ this.facility===undefined ? "" : this.facility.descriptionOtherConvenience,Validators.required]
+    })
+  }
+  valitethan0(c:AbstractControl){
+      let number = c.value;
+      if(number<0){
+        return{
+          "validThan0":true
+        }
+      }
+      return null;
+  }
   submit() {
-
+    console.log(this.rfForm.value)
+    this.facilityService.saveFacility(this.rfForm.value).subscribe(data=>{
+      this.list.ngOnInit();
+        // this.router.navigateByUrl("/facility/list")
+    })
   }
 }

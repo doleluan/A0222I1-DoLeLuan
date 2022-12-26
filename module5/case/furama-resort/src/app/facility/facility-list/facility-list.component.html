@@ -1,15 +1,15 @@
 <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-  Add New Facility
-</button>
-
 <table class="table table-striped">
+  <tr><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="addNew()">
+    Add New Facility
+  </button></tr>
   <thead>
   <tr>
     <th scope="col">#</th>
     <th scope="col">Name</th>
     <th scope="col">Are</th>
     <th scope="col">Cost</th>
+    <th scope="col">Max People</th>
     <th scope="col">Standard Room</th>
     <th scope="col">Other Convenience</th>
     <th scope="col">Pool Area</th>
@@ -20,16 +20,17 @@
   </thead>
   <tbody>
   <tr *ngFor="let facility of facilitys;let count = index">
-    <td>{{count+1}}</td>
+    <td>{{facility.id}}</td>
     <td>{{facility.name}}</td>
     <td>{{facility.areaFacility}}</td>
     <td>{{facility.cost}}</td>
+    <td>{{facility.maxPeople}}</td>
     <td>{{facility.standardRoom}}</td>
     <td>{{facility.descriptionOtherConvenience}}</td>
     <td>{{facility.poolArea}}</td>
     <td>{{facility.numberOfFloors}}</td>
     <td>
-      <button type="button" class="btn btn-primary">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  (click)="getInfo(facility)">
         Edit
       </button>
     </td>
@@ -42,11 +43,6 @@
   </tbody>
 </table>
 
-
-
-
-
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -58,11 +54,11 @@
         </button>
       </div>
       <div class="modal-body">
-<!--        <app-product-create></app-product-create>-->
+        <app-facility-create #save [facility]="facility"></app-facility-create>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" data-dismiss="modal" class="btn btn-primary">Save changes</button>
+        <button type="button" data-dismiss="modal" class="btn btn-primary" (click)="save.submit()">Save</button>
       </div>
     </div>
   </div>

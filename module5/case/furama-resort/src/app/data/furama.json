@@ -1,17 +1,6 @@
 {
   "facility": [
     {
-      "id": 1,
-      "name": "Alo",
-      "areaFacility": 200,
-      "cost": 500,
-      "maxPeople": 2,
-      "standardRoom": 1,
-      "descriptionOtherConvenience": "Ok",
-      "poolArea": 200,
-      "numberOfFloors": 5
-    },
-    {
       "id": 2,
       "name": "Alo",
       "areaFacility": 200,
@@ -32,6 +21,50 @@
       "descriptionOtherConvenience": "Ok",
       "poolArea": 200,
       "numberOfFloors": 5
+    },
+    {
+      "id": 4,
+      "name": "12",
+      "cost": "xxxx",
+      "areaFacility": 111,
+      "poolArea": 12,
+      "numberOfFloors": 11,
+      "standardRoom": 11,
+      "maxPeople": 11,
+      "descriptionOtherConvenience": "11"
+    },
+    {
+      "id": 5,
+      "name": "1",
+      "cost": "1",
+      "areaFacility": 1,
+      "poolArea": 1,
+      "numberOfFloors": 1,
+      "standardRoom": 1,
+      "maxPeople": 1,
+      "descriptionOtherConvenience": "1"
+    },
+    {
+      "id": 6,
+      "name": "1",
+      "cost": "1",
+      "areaFacility": 1,
+      "poolArea": 1,
+      "numberOfFloors": 1,
+      "standardRoom": 1,
+      "maxPeople": 1,
+      "descriptionOtherConvenience": "1"
+    },
+    {
+      "id": 7,
+      "name": "34",
+      "cost": "34",
+      "areaFacility": 34,
+      "poolArea": 34,
+      "numberOfFloors": 34,
+      "standardRoom": 34,
+      "maxPeople": 34,
+      "descriptionOtherConvenience": "34"
     }
   ]
 }
