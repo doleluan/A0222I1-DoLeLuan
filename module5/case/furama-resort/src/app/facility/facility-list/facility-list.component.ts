@@ -9,8 +9,7 @@ import {Facility} from "../../model/Facility";
 })
 export class FacilityListComponent implements OnInit {
   facilitys:Facility[]=[];
-  facility;
-  constructor(private facilityService : FacilityService) { }
+  facility;constructor(private facilityService : FacilityService) { }
 
   ngOnInit(): void {
     this.getAll();
@@ -22,7 +21,6 @@ export class FacilityListComponent implements OnInit {
     })
 
   }
-
   deleteFacility() {
     this.facilityService.delete(this.facility.id).subscribe(date=>{
       this.ngOnInit();
@@ -31,7 +29,6 @@ export class FacilityListComponent implements OnInit {
   getInfo(facility) {
     this.facility = facility;
   }
-
   addNew() {
     this.facility=undefined;
   }

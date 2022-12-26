@@ -65,6 +65,86 @@
       "standardRoom": 34,
       "maxPeople": 34,
       "descriptionOtherConvenience": "34"
+    },
+    {
+      "id": 8,
+      "name": "aaaa",
+      "cost": "1",
+      "areaFacility": "1",
+      "poolArea": "1",
+      "numberOfFloors": "1",
+      "standardRoom": "aa",
+      "maxPeople": "1",
+      "descriptionOtherConvenience": "aaa"
+    },
+    {
+      "id": 9,
+      "name": "aa",
+      "cost": "1",
+      "areaFacility": "1",
+      "poolArea": "1",
+      "numberOfFloors": "1",
+      "standardRoom": "1",
+      "maxPeople": "1",
+      "descriptionOtherConvenience": "1"
+    },
+    {
+      "id": 10,
+      "name": "aaa",
+      "cost": "1",
+      "areaFacility": "1",
+      "poolArea": "1",
+      "numberOfFloors": "1",
+      "standardRoom": "1",
+      "maxPeople": "1",
+      "descriptionOtherConvenience": "1"
+    }
+  ],
+  "customers": [
+    {
+      "id": 3,
+      "code": "alo",
+      "name": "hoang ngu",
+      "phoneNumber": "12321332121",
+      "identify": "1231213123",
+      "email": "chubedan123@gmail.com",
+      "dateOfBirth": "14-12-2002"
+    },
+    {
+      "id": 4,
+      "code": "alo",
+      "name": "hoang ngu",
+      "phoneNumber": "12321332121",
+      "identify": "1231213123",
+      "email": "chubedan123@gmail.com",
+      "dateOfBirth": "14-12-2002"
+    },
+    {
+      "id": 5,
+      "code": "KH-1902",
+      "name": "Phạm Viết Bu",
+      "phoneNumber": "12321332121",
+      "identify": "1231213123",
+      "email": "chubedan123@gmail.com",
+      "dateOfBirth": "18-02-2002"
+    },
+    {
+      "id": 6,
+      "name": "Luận Lê",
+      "email": "leluando2001@gmail.com",
+      "identify": "12321",
+      "phoneNumber": "0988282506",
+      "code": "12321312",
+      "dateOfBirth": "2022-12-09"
+    },
+    {
+      "id": 7,
+      "name": "Luận Lê",
+      "email": "leluando2001@gmail.com",
+      "identify": "123213",
+      "phoneNumber": "0988282506",
+      "code": "123213",
+      "dateOfBirth": "2022-12-12"
     }
   ]
 }

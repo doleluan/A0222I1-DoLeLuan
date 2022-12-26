@@ -1,4 +1,3 @@
-<!-- Button trigger modal -->
 <table class="table table-striped">
   <tr><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" (click)="addNew()">
     Add New Facility
@@ -6,43 +5,39 @@
   <thead>
   <tr>
     <th scope="col">#</th>
+    <th scope="col">Mã Khách Hàng</th>
     <th scope="col">Name</th>
-    <th scope="col">Are</th>
-    <th scope="col">Cost</th>
-    <th scope="col">Max People</th>
-    <th scope="col">Standard Room</th>
-    <th scope="col">Other Convenience</th>
-    <th scope="col">Pool Area</th>
-    <th scope="col">Number Of Floors</th>
+    <th scope="col">Phone Number</th>
+    <th scope="col">Identify Card</th>
+    <th scope="col">Email</th>
+    <th scope="col">Date Of Birth</th>
     <th scope="col">Edit</th>
     <th scope="col">Delete</th>
   </tr>
   </thead>
   <tbody>
-  <tr *ngFor="let facility of facilitys;let count = index">
-    <td>{{facility.id}}</td>
-    <td>{{facility.name}}</td>
-    <td>{{facility.areaFacility}}</td>
-    <td>{{facility.cost}}</td>
-    <td>{{facility.maxPeople}}</td>
-    <td>{{facility.standardRoom}}</td>
-    <td>{{facility.descriptionOtherConvenience}}</td>
-    <td>{{facility.poolArea}}</td>
-    <td>{{facility.numberOfFloors}}</td>
+  <tr *ngFor="let customer of customers;let count = index">
+    <td>{{customer.id}}</td>
+    <td>{{customer.code}}</td>
+    <td>{{customer.name}}</td>
+    <td>{{customer.phoneNumber}}</td>
+    <td>{{customer.identify}}</td>
+    <td>{{customer.email}}</td>
+    <td>{{customer.dateOfBirth}}</td>
+
     <td>
-      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  (click)="getInfo(facility)">
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  (click)="getInfo(customer)">
         Edit
       </button>
     </td>
     <td>
-      <button (click)="getInfo(facility)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalDelete">
+      <button (click)="getInfo(customer)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalDelete">
         Delete
       </button>
     </td>
   </tr>
   </tbody>
 </table>
-
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -54,11 +49,11 @@
         </button>
       </div>
       <div class="modal-body">
-        <app-facility-create #save [facility]="facility"></app-facility-create>
+        <app-customer-save #save [customer]="customer"></app-customer-save>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" [disabled]="save.rfForm.invalid" data-dismiss="modal" class="btn btn-primary" (click)="save.submit()">Save</button>
+        <button type="button"  data-dismiss="modal" class="btn btn-primary" (click)="save.submit()">Save</button>
       </div>
     </div>
   </div>
@@ -75,7 +70,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" data-dismiss="modal" (click)="deleteFacility()" class="btn btn-primary">Delete</button>
+        <button type="button" data-dismiss="modal" (click)="deleteCustomer()" class="btn btn-primary">Delete</button>
       </div>
     </div>
   </div>

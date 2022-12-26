@@ -26,16 +26,15 @@ export class FacilityCreateComponent implements OnInit,OnChanges {
     this.buildThisForm();
   }
   buildThisForm(){
-    console.log(this.facility)
     this.rfForm = this.formBuilder.group({
       id:[this.facility===undefined ? "" : this.facility.id],
       name:[ this.facility===undefined ? "" : this.facility.name,Validators.pattern('\\D{0,}')],
-      cost:[this.facility===undefined ? "" : this.facility.cost,[this.valitethan0,Validators.pattern('\\W{0}')]],
-      areaFacility:[ this.facility===undefined ? "" : this.facility.areaFacility,[this.valitethan0,Validators.pattern('\\W{0}')]],
-      poolArea:[ this.facility===undefined ? "" : this.facility.poolArea,[this.valitethan0,Validators.pattern('\\W{0}')]],
-      numberOfFloors:[ this.facility===undefined ? "" : this.facility.numberOfFloors,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      cost:[this.facility===undefined ? "" : this.facility.cost,[this.valitethan0,Validators.pattern('\\d{0,}')]],
+      areaFacility:[ this.facility===undefined ? "" : this.facility.areaFacility,[this.valitethan0,Validators.pattern('\\d{0,}')]],
+      poolArea:[ this.facility===undefined ? "" : this.facility.poolArea,[this.valitethan0,Validators.pattern('\\d{0,}')]],
+      numberOfFloors:[ this.facility===undefined ? "" : this.facility.numberOfFloors,[this.valitethan0,Validators.pattern('\\d{0,}')]],
       standardRoom:[ this.facility===undefined ? "" : this.facility.standardRoom,Validators.required],
-      maxPeople:[ this.facility===undefined ? "" : this.facility.maxPeople,[this.valitethan0,Validators.pattern('\\W{0}')]],
+      maxPeople:[ this.facility===undefined ? "" : this.facility.maxPeople,[this.valitethan0,Validators.pattern('\\d{0,}')]],
       descriptionOtherConvenience:[ this.facility===undefined ? "" : this.facility.descriptionOtherConvenience,Validators.required]
     })
   }
