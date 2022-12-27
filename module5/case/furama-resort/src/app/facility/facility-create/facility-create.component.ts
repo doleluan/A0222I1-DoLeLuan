@@ -11,18 +11,18 @@ import {FacilityListComponent} from "../facility-list/facility-list.component";
   styleUrls: ['./facility-create.component.css']
 })
 export class FacilityCreateComponent implements OnInit,OnChanges {
-
-  rfForm :FormGroup;
   @Input()
   facility:Facility;
+
+  rfForm :FormGroup;
+
   constructor(private formBuilder :FormBuilder,private router: Router,private facilityService:FacilityService
   , private  list :FacilityListComponent) { }
 
   ngOnInit(): void {
-
   }
   ngOnChanges(changes:SimpleChanges): void {
-    this.facility = changes.facility.currentValue;
+      this.facility = changes.facility.currentValue;
     this.buildThisForm();
   }
   buildThisForm(){
@@ -51,7 +51,6 @@ export class FacilityCreateComponent implements OnInit,OnChanges {
     console.log(this.rfForm.value)
     this.facilityService.saveFacility(this.rfForm.value).subscribe(data=>{
       this.list.ngOnInit();
-        // this.router.navigateByUrl("/facility/list")
     })
   }
 }

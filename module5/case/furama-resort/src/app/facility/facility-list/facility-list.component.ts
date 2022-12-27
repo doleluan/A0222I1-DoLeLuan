@@ -9,7 +9,8 @@ import {Facility} from "../../model/Facility";
 })
 export class FacilityListComponent implements OnInit {
   facilitys:Facility[]=[];
-  facility;constructor(private facilityService : FacilityService) { }
+  facility:Facility;
+  constructor(private facilityService : FacilityService) { }
 
   ngOnInit(): void {
     this.getAll();
