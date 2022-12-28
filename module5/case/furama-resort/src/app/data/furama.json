@@ -2,7 +2,7 @@
   "facility": [
     {
       "id": 2,
-      "name": "Aloa",
+      "name": "Tắm nước nóng",
       "cost": "600",
       "areaFacility": 200,
       "poolArea": 200,
@@ -13,21 +13,21 @@
     },
     {
       "id": 3,
-      "name": "Alo",
-      "areaFacility": 200,
+      "name": "Massage A-Z",
       "cost": 500,
-      "maxPeople": 2,
-      "standardRoom": 1,
-      "descriptionOtherConvenience": "Ok",
+      "areaFacility": 200,
       "poolArea": 200,
-      "numberOfFloors": 5
+      "numberOfFloors": 5,
+      "standardRoom": 1,
+      "maxPeople": 2,
+      "descriptionOtherConvenience": "Ok"
     },
     {
       "id": 4,
-      "name": "12",
-      "cost": "xxxx",
-      "areaFacility": 111,
-      "poolArea": 12,
+      "name": "Gội Đầu",
+      "cost": "111",
+      "areaFacility": "1111",
+      "poolArea": "121",
       "numberOfFloors": 11,
       "standardRoom": 11,
       "maxPeople": 11,
@@ -35,7 +35,7 @@
     },
     {
       "id": 5,
-      "name": "1",
+      "name": "Tâm Sự",
       "cost": "1",
       "areaFacility": 1,
       "poolArea": 1,
@@ -46,7 +46,7 @@
     },
     {
       "id": 6,
-      "name": "asas",
+      "name": "Hát Cùng Nhau",
       "cost": "1",
       "areaFacility": "1",
       "poolArea": "1",
@@ -57,7 +57,7 @@
     },
     {
       "id": 7,
-      "name": "asas",
+      "name": "Song Tu",
       "cost": "12",
       "areaFacility": "12",
       "poolArea": "12",
@@ -76,15 +76,6 @@
       "phoneNumber": "12321332121",
       "code": "KH-9999",
       "dateOfBirth": "14-12-2002"
-    },
-    {
-      "id": 4,
-      "name": "Nhất bú lòn",
-      "email": "chubedan123@gmail.com",
-      "identify": "1231213123",
-      "phoneNumber": "12321332121",
-      "code": "alo",
-      "dateOfBirth": "2001-01-01"
     },
     {
       "id": 5,
@@ -115,11 +106,11 @@
     },
     {
       "id": 8,
-      "name": "13",
-      "email": "12321",
-      "identify": "13123",
-      "phoneNumber": "12321",
-      "code": "1321",
+      "name": "Thái Quang Huy Hoàng",
+      "email": "hoangde123@gmail.com",
+      "identify": "13123211111",
+      "phoneNumber": "0900000001",
+      "code": "KH-9999",
       "dateOfBirth": "2022-12-02"
     },
     {
@@ -133,12 +124,77 @@
     },
     {
       "id": 10,
-      "name": "1123",
+      "name": "Phạm Viết Bu",
       "email": "12321",
       "identify": "123213",
       "phoneNumber": "123213",
       "code": "13221",
       "dateOfBirth": "2022-12-23"
+    },
+    {
+      "id": 11,
+      "name": "Huỳnh Xuân Nhất",
+      "email": "xuannhathuynh2001@gmail.com",
+      "identify": "12313212131",
+      "phoneNumber": "0900000000",
+      "code": "KH-1111",
+      "dateOfBirth": "2022-12-08"
+    }
+  ],
+  "contract": [
+    {
+      "id": 1,
+      "code": "ok",
+      "customer": "11",
+      "facility": "2",
+      "startDay": "2022-12-23",
+      "endDay": "2022-12-23",
+      "deposits": 123123
+    },
+    {
+      "id": 2,
+      "code": "ok",
+      "customer": "9",
+      "facility": 1,
+      "startDay": "2022-12-23",
+      "endDay": "2022-12-23",
+      "deposits": 123123
+    },
+    {
+      "id": 3,
+      "code": "ok",
+      "customer": "11",
+      "facility": "4",
+      "startDay": "2022-12-23",
+      "endDay": "2022-12-23",
+      "deposits": 123123
+    },
+    {
+      "id": 4,
+      "code": "ok",
+      "customer": "5",
+      "facility": "6",
+      "startDay": "2022-12-23",
+      "endDay": "2022-12-23",
+      "deposits": 123123
+    },
+    {
+      "id": 5,
+      "code": "ok",
+      "customer": 5,
+      "facility": "7",
+      "startDay": "2022-12-23",
+      "endDay": "2022-12-23",
+      "deposits": 123123
+    },
+    {
+      "id": 6,
+      "code": "ok",
+      "customer": "8",
+      "facility": "3",
+      "startDay": "2022-12-23",
+      "endDay": "2022-12-23",
+      "deposits": 999998
     }
   ]
 }

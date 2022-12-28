@@ -11,6 +11,7 @@ import { FacilityCreateComponent } from './facility/facility-create/facility-cre
 import {ReactiveFormsModule} from "@angular/forms";
 import { CustomerListComponent } from './customer/customer-list/customer-list.component';
 import { CustomerSaveComponent } from './customer/customer-save/customer-save.component';
+import { ContractManagementComponent } from './contract/contract-management/contract-management.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { CustomerSaveComponent } from './customer/customer-save/customer-save.co
     FacilityCreateComponent,
     CustomerListComponent,
     CustomerSaveComponent,
+    ContractManagementComponent,
   ],
   imports: [
     BrowserModule,

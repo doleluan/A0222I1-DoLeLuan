@@ -1,0 +1,112 @@
+<div>
+  <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+          (click)="addNew()">
+    Add New Customer
+  </button>
+</div>
+<table class="table table-striped">
+  <thead>
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Code</th>
+    <th scope="col">Customer Info</th>
+    <th scope="col">Facility Info</th>
+    <th scope="col">Start Date</th>
+    <th scope="col">End Date</th>
+    <th scope="col">Deposite</th>
+    <th scope="col">Edit</th>
+    <th scope="col">Delete</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let contract of contracts;let count = index">
+    <td>{{count+1}}</td>
+    <td>{{contract.code}}</td>
+    <td>{{this.convertCustomer(contract.customer)}}</td>
+    <td>{{this.convertFacility(contract.facility)}}</td>
+    <td>{{contract.startDay}}</td>
+    <td>{{contract.endDay}}</td>
+    <td>{{contract.deposits}}</td>
+    <td>
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"  (click)="getInfo(contract)">
+        Edit
+      </button>
+    </td>
+    <td>
+      <button (click)="getInfo(contract)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalDelete">
+        Delete
+      </button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup]="rfForm" (ngSubmit)="submit()">
+          <table>
+            <tr>
+              <!--      <td>Id: </td>-->
+              <td><input type="text" formControlName="id" name="name" hidden></td>
+            </tr>
+            <tr>
+              <td>Code: </td>
+              <td><input type="text" formControlName="code" name=""></td>
+            </tr>
+            <tr>
+              <td>Customer: </td>
+              <td>
+                <select formControlName="customer" name="" id="" >
+                  <option [value]="customer.id" *ngFor="let customer of customers">{{customer.name}}</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td>Facility: </td>
+              <td>
+                <select formControlName="facility" name="" >
+                  <option [value]="facility.id" *ngFor="let facility of facilitys">{{facility.name}}</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>Start Day: </td>
+              <td><input type="date" formControlName="startDay" name=""></td>
+            </tr>
+            <tr>
+              <td>End Day: </td>
+              <td><input type="date" formControlName="endDay" name=""></td>
+            </tr>
+            <tr>
+              <td>Deposits: </td>
+              <td><input type="text" formControlName="deposits" name=""></td>
+            </tr>
+            <tr>
+              <td>
+
+              </td>
+              <td>
+                <p *ngIf="rfForm.controls.deposits.hasError('validThan0') && rfForm.controls.deposits.touched" style="color: red;
+              margin: 0">Tiền đặt cọc phải lớn hơn 0</p>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button"  data-dismiss="modal" class="btn btn-primary" (click)="this.submit()" >Save</button>
+      </div>
+    </div>
+  </div>
+</div>
